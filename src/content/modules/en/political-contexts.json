@@ -1,0 +1,111 @@
+{
+  "slug": "political-contexts",
+  "number": 1,
+  "color": "blue",
+  "title": "Political Contexts and Digital Ecosystems",
+  "summary": "How algorithms, memes and the attention economy shape political reality, and how to use video activism without getting played by it.",
+  "topics": ["Attention economy", "Memes as Trojan horses", "Clicktivism"],
+  "description": [
+    "This lesson takes a deep look at how political, social and civic life has changed in the age of digital platforms. Society has become \"extremely online\" across all generations. The lesson introduces \"brain rot\" (Oxford Word of the Year 2024) to describe minds overwhelmed by algorithmic content.",
+    "It traces how digital spaces evolved from the text-based networks of 2010 to the video-dominated landscape of 2025. It frames this shift as a return to an \"oral culture\", where social videos are the new storytelling campfires.",
+    "Participants examine how physical political spaces (youth culture, social centres and squats of the 80s and 90s) have been replaced by digital ones like Discord, Twitch, Reddit and Fortnite.",
+    "The lesson covers the dangers of \"technofeudalism\" (platforms as modern feudal estates) and of \"clicktivism\" and \"slacktivism\". It shows how radicalisation works under the hood: memes act as Trojan horses for ideology, and irony and \"shitposting\" shift the Overton window.",
+    "Finally, it unpacks the algorithmic attention economy, rooted in Facebook's 2009 introduction of the algorithmic feed (the internet's \"original sin\"). It gives participants the psychological and technical strategies of effective video activism."
+  ],
+  "duration": 90,
+  "objectives": [
+    "Identify how the attention economy works and how algorithms shape political reality",
+    "Analyse how humour and \"shitposting\" carry ideological radicalisation",
+    "Understand the shift from physical to digital political spaces (Discord, Twitch, TikTok…)",
+    "Weigh clicktivism against tangible political action",
+    "Apply the principles of video activism (3-second rule, metrics, emotional hooks) responsibly"
+  ],
+  "targetGroup": [
+    "Young people interested in media literacy, digital sociology and activism, especially those active online who want to understand the mechanics behind the content they consume and create."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Explain the impact of the digital attention economy",
+      "content": "Attention economy; algorithms as \"black boxes\"; the role of \"brain rot\"",
+      "methods": "Short lecture; visual analysis of social media feeds",
+      "evaluation": "Class discussion; reflection"
+    },
+    {
+      "outcome": "Identify ideological tools in digital media",
+      "content": "Memes as \"Trojan horses\"; shitposting; shifting the Overton window",
+      "methods": "Guided analysis of case studies (memes, videos)",
+      "evaluation": "Worksheet on ideological messaging"
+    },
+    {
+      "outcome": "Evaluate digital activism strategies",
+      "content": "Clicktivism vs. real-world impact; video activism; psychological triggers",
+      "methods": "Case study of successful vs. failed digital campaigns",
+      "evaluation": "Group presentation; peer feedback"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "Digital daily life",
+      "minutes": 10,
+      "bullets": [
+        "Discussion of \"brain rot\" and the move from text-based to video-saturated environments."
+      ],
+      "prompts": [
+        "How has the way you consume information changed over the last few years?"
+      ]
+    },
+    {
+      "type": "input",
+      "title": "The political digital ecosystem",
+      "minutes": 20,
+      "bullets": [
+        "**The attention economy:** algorithmic influence since 2009.",
+        "**New political spaces:** Discord, Twitch and Reddit as the new \"town squares\".",
+        "**Ideological funnels:** how memes act as Trojan horses for radicalisation and shift the Overton window."
+      ]
+    },
+    {
+      "type": "case",
+      "title": "Workshop: the anatomy of a viral message",
+      "minutes": 30,
+      "bullets": [
+        "Analysis of successful video activism.",
+        "Focus on the **3-second rule**, pacing and emotional triggers: laughter, anger, belonging.",
+        "Case study: why do we share what we share? Identity building vs. community belonging."
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Group activity: dissecting digital influence",
+      "minutes": 20,
+      "activity": {
+        "intro": "Groups analyse a current viral video or political meme. They identify:",
+        "steps": [
+          { "title": "The intended emotion", "text": "What is the content trying to make you feel?" },
+          { "title": "The hidden message", "text": "Is there an ideological message underneath, if any?" },
+          { "title": "The algorithmic boost", "text": "How did the algorithm likely push this content?" }
+        ]
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Reflection and closing",
+      "minutes": 10,
+      "prompts": [
+        "How can we stay critical in a digital-feudal ecosystem?",
+        "Can we use these platforms for good without falling into slacktivism?"
+      ],
+      "keyMessage": "Each participant shares one strategy for being more mindful of algorithmic influence."
+    }
+  ],
+  "materials": [
+    { "name": "Political Contexts and Digital Ecosystems", "form": "Presentation", "kind": "presentation" },
+    { "name": "A selection of current TikTok/Reels political content", "form": "Case studies", "kind": "case" },
+    { "name": "\"Anatomy of an Algorithmic Post\": deconstruction template", "form": "Worksheet", "kind": "worksheet" },
+    { "name": "Laptop, projector, internet connection and personal devices for quick research", "form": "Technical equipment", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "Active participation in the group analysis, the quality of insights in the worksheets, and a final oral reflection on media responsibility."
+  ]
+}

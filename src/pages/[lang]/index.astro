@@ -1,0 +1,207 @@
+---
+import Barber from '../../components/Barber.astro';
+import Base from '../../layouts/Base.astro';
+import Blob from '../../components/Blob.astro';
+import Scribble from '../../components/Scribble.astro';
+import Arrow from '../../components/Arrow.astro';
+import ModuleCard from '../../components/ModuleCard.astro';
+import Interested from '../../components/Interested.astro';
+import { langs, localePath, useTranslations, type Lang } from '../../i18n/ui';
+import { site } from '../../i18n/site';
+import { getModules } from '../../lib/modules';
+
+export function getStaticPaths() {
+  return langs.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const c = site[lang];
+const modules = getModules(lang);
+---
+<Base lang={lang}>
+  <!-- Hero -->
+  <section class="hero">
+    <img class="figure fig-left" src="/cia-graphic-1.png" alt="" width="432" height="511" />
+    <img class="figure fig-right" src="/cia-graphic-2.png" alt="" width="419" height="652" />
+    <div class="wrap hero-inner">
+      <h1 class="wordmark">
+        <Barber as="span" class="w1" text="Videoactivism" />
+        <Barber as="span" class="w2" text="Academy" />
+        <span class="sr-only"> · {t('site.name')}</span>
+      </h1>
+      <p class="kicker">{c.hero.kicker}</p>
+
+      <Blob class="hero-blob">
+        <p class="pitch">{c.hero.pitch}</p>
+        <ul class="facts">
+          {c.hero.facts.map((f, i) => <li>{i === 0 ? <Scribble>{f}</Scribble> : f}</li>)}
+        </ul>
+        <div class="actions">
+          <a class="btn" href="#report">{c.hero.report} <Arrow /></a>
+          <a class="btn btn--ghost" href="#curriculum">{c.hero.curriculum}</a>
+        </div>
+      </Blob>
+    </div>
+  </section>
+
+  <!-- For you -->
+  <section class="section for-you on-green">
+    <div class="wrap two">
+      <div>
+        <Barber class="h2" text={c.forYou.title} />
+      </div>
+      <ul class="arrow-list big">
+        {c.forYou.items.map((q) => <li>{q}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section how" id="report">
+    <div class="wrap">
+      <div class="section-head"><Barber class="h2" text={c.phases.title} /></div>
+      <ol class="phases">
+        {c.phases.items.map((p, i) => (
+          <li class={`phase card p${i + 1}`}>
+            <div class="phase-top">
+              <span class="label">{p.label}</span>
+              <span class="chip chip--yellow">{p.when}</span>
+            </div>
+            <Barber as="h3" class={`phase-title ${i === 2 ? "no-gap" : "on-paper"}`} text={p.title} />
+            <p>{p.text}</p>
+            {p.points && <ul class="arrow-list small">{p.points.map((x) => <li>{x}</li>)}</ul>}
+          </li>
+        ))}
+        <li class="phase end">
+          <Blob variant="warm" back={false}>
+            <Barber as="p" class="end-title no-gap" text={c.phases.end.title} />
+            <p>{c.phases.end.text}</p>
+          </Blob>
+        </li>
+      </ol>
+      <p class="more"><a class="btn btn--ghost" href={localePath(lang, 'program')}>{t('cta.program')} <Arrow /></a></p>
+    </div>
+  </section>
+
+  <!-- Learn -->
+  <section class="section section--ink learn">
+    <div class="wrap">
+      <div class="section-head"><Barber class="h2" text={c.learn.title} /></div>
+      <ol class="learn-grid">
+        {c.learn.items.map((x, i) => (
+          <li><span class="n">{String(i + 1).padStart(2, '0')}</span><span>{x}</span></li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Formats -->
+  <section class="section formats">
+    <div class="wrap">
+      <div class="section-head">
+        <Barber class="h2" text={c.formats.title} />
+        <p class="lead">{c.formats.lead}</p>
+      </div>
+      <ul class="stickers">
+        {c.formats.items.map((f, i) => <li style={`--r:${[-4, 3, -2, 5, -3, 2, -5, 4, -1][i % 9]}deg`} class={`s${i % 5}`}>{f}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Open curriculum -->
+  <section class="section curriculum" id="curriculum">
+    <div class="wrap">
+      <div class="section-head">
+        <Barber class="h2" text={c.modules.title} />
+        <p class="lead">{c.modules.lead}</p>
+      </div>
+      <ul class="cpoints">
+        {c.modules.points.map((x) => <li><strong>{x.title}</strong><span>{x.text}</span></li>)}
+      </ul>
+      <div class="mgrid">
+        {modules.map(({ module }) => <ModuleCard module={module} lang={lang} />)}
+      </div>
+      <p class="more"><a class="btn" href={localePath(lang, 'modules')}>{t('cta.modules')} <Arrow /></a></p>
+    </div>
+  </section>
+
+  <Interested lang={lang} />
+</Base>
+
+<style>
+  /* Hero */
+  .hero { position: relative; padding: clamp(40px, 7vw, 88px) 0 clamp(64px, 9vw, 120px); overflow: hidden; }
+  .hero-inner { display: grid; justify-items: center; text-align: center; position: relative; z-index: 1; }
+  .wordmark { display: grid; justify-items: center; gap: 0.02em; margin: 0; letter-spacing: -0.025em; }
+  .wordmark :global(.barber) { line-height: 1; }
+  .w1 { font-size: clamp(26px, 6.6vw, 92px); }
+  .w2 { font-size: clamp(42px, 10.6vw, 148px); }
+  .kicker { font-size: clamp(24px, 4vw, 54px); text-transform: uppercase; margin: 14px 0 clamp(20px, 3vw, 36px); line-height: 1.05; }
+  .hero-blob { width: min(100%, 940px); --rot: -1deg; }
+  .pitch { font-size: clamp(19px, 2.3vw, 26px); line-height: 1.35; font-weight: 500; max-width: 640px; margin: 0 auto 22px; }
+  .facts { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; font-weight: 800; font-size: clamp(17px, 2vw, 22px); margin-bottom: 26px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .figure { position: absolute; z-index: 2; pointer-events: none; }
+  .fig-left { left: max(-40px, calc(50% - 840px)); bottom: 40px; width: clamp(180px, 20vw, 300px); }
+  .fig-right { right: max(-30px, calc(50% - 830px)); top: 34%; width: clamp(170px, 18vw, 270px); }
+  @media (max-width: 1100px) { .figure { opacity: .0; display: none; } }
+
+  /* For you */
+  .two { display: grid; grid-template-columns: 1fr 1.4fr; gap: 40px; align-items: start; }
+  .big { font-size: clamp(21px, 2.6vw, 30px); line-height: 1.25; gap: 22px; }
+  .big li { grid-template-columns: 56px 1fr; }
+  .big li::before { width: 56px; height: 28px; }
+  @media (max-width: 800px) { .two { grid-template-columns: 1fr; } }
+
+  /* Phases */
+  .phases { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: stretch; }
+  .phase { padding: 28px; display: grid; gap: 14px; align-content: start; position: relative; }
+  .phase-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .phase-title { font-size: clamp(28px, 2.9vw, 40px); }
+  .p1 { transform: rotate(-1deg); }
+  .p2 { transform: rotate(1deg) translateY(12px); }
+  .p3 { transform: rotate(-0.5deg); background: var(--lime); }
+  .phase.end { grid-column: 1 / -1; justify-self: center; width: min(100%, 560px); padding: 0; margin-top: 12px; text-align: center; }
+  .end-title { font-size: 30px; justify-items: center; margin-bottom: 8px; }
+  .small { font-size: 16px; gap: 8px; }
+  .small li { grid-template-columns: 30px 1fr; }
+  .small li::before { width: 30px; height: 15px; }
+  .phase .arrow-list li::before { filter: brightness(0); }
+  @media (max-width: 980px) {
+    .phases { grid-template-columns: 1fr; }
+    .p1, .p2, .p3 { transform: none; }
+  }
+
+  /* Modules */
+  .mgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  @media (max-width: 1100px) { .mgrid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .mgrid { grid-template-columns: 1fr; } }
+
+  /* Learn */
+  .learn-grid { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .learn-grid li { border: 2px solid var(--lime); padding: 20px; display: grid; gap: 14px; align-content: start; font-weight: 600; font-size: 18px; line-height: 1.3; }
+  .learn-grid .n { font-weight: 900; font-size: 40px; color: var(--lime); line-height: 1; }
+  @media (max-width: 980px) { .learn-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .learn-grid { grid-template-columns: 1fr; } .learn-grid li { grid-template-columns: 56px 1fr; align-items: center; } }
+
+  /* Formats */
+  .stickers { list-style: none; display: flex; flex-wrap: wrap; gap: 16px 18px; }
+  .stickers li {
+    font-weight: 900; text-transform: uppercase; font-size: clamp(20px, 3vw, 34px);
+    padding: 10px 22px; border: var(--border); border-radius: 999px; box-shadow: var(--shadow-sm);
+    transform: rotate(var(--r)); background: var(--paper);
+  }
+  .stickers .s0 { background: var(--yellow); }
+  .stickers .s1 { background: var(--blue); color: #fff; }
+  .stickers .s2 { background: var(--coral); }
+  .stickers .s3 { background: var(--lime); }
+  .stickers .s4 { background: var(--peach); }
+
+  /* Curriculum */
+  .cpoints { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; }
+  .cpoints li { display: grid; gap: 6px; padding-left: 18px; border-left: 6px solid var(--ink); }
+  .cpoints strong { font-size: 19px; }
+  .cpoints span { font-size: 16px; line-height: 1.45; }
+  @media (max-width: 800px) { .cpoints { grid-template-columns: 1fr; } }
+  .more { margin-top: 40px; text-align: center; }
+</style>

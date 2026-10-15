@@ -1,0 +1,113 @@
+---
+import Barber from './Barber.astro';
+import { languages, langs, localePath, useTranslations, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; path: string }
+const { lang, path } = Astro.props;
+const t = useTranslations(lang);
+
+const nav = [
+  { href: '', label: t('nav.home') },
+  { href: 'program', label: t('nav.program') },
+  { href: 'modules', label: t('nav.modules') },
+  { href: 'about', label: t('nav.about') },
+];
+const section = path.split('/')[0];
+---
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href={localePath(lang)} aria-label={t('site.name')}>
+      <Barber as="span" class="l1" text="Videoactivism" /><Barber as="span" class="l2" text="Academy" />
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <ul>
+        {nav.map((n) => (
+          <li><a href={localePath(lang, n.href)} aria-current={section === n.href ? 'page' : undefined}>{n.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <nav class="langs" aria-label={t('nav.lang')}>
+      {langs.map((l) => (
+        <a
+          href={localePath(l, path)}
+          hreflang={l}
+          lang={l}
+          title={languages[l]}
+          aria-current={l === lang ? 'true' : undefined}
+          data-lang={l}
+        >{l.toUpperCase()}</a>
+      ))}
+    </nav>
+
+    <details class="menu">
+      <summary><span class="sr-only">{t('nav.menu')}</span><span class="burger" aria-hidden="true"></span></summary>
+      <ul>
+        {nav.map((n) => (
+          <li><a href={localePath(lang, n.href)} aria-current={section === n.href ? 'page' : undefined}>{n.label}</a></li>
+        ))}
+      </ul>
+    </details>
+  </div>
+</header>
+
+<script>
+  // Remember the chosen language for the root redirect.
+  document.querySelectorAll<HTMLAnchorElement>('.langs a[data-lang]').forEach((a) =>
+    a.addEventListener('click', () => {
+      try { localStorage.setItem('lang', a.dataset.lang!); } catch {}
+    }),
+  );
+</script>
+
+<style>
+  header.site {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--green); border-bottom: var(--border);
+  }
+  .bar { display: flex; align-items: center; gap: 24px; min-height: var(--header-h); }
+  .logo { display: grid; text-decoration: none; justify-items: start; }
+  .l1 { font-size: 14px; }
+  .l2 { font-size: 21.5px; margin-top: -2px; }
+  .nav { margin-left: auto; }
+  .nav ul { list-style: none; display: flex; gap: 4px; }
+  .nav a, .menu a {
+    display: block; padding: 8px 14px; border-radius: 999px;
+    text-decoration: none; font-weight: 700; font-size: 16px;
+  }
+  .nav a:hover { background: rgba(255,255,255,.45); }
+  .nav a[aria-current='page'] { background: var(--ink); color: var(--lime); }
+
+  .langs { display: flex; border: var(--border); border-radius: 999px; overflow: hidden; background: var(--paper); flex: none; }
+  .langs a {
+    padding: 7px 11px; font-size: 14px; font-weight: 800; letter-spacing: .04em;
+    text-decoration: none; line-height: 1;
+  }
+  .langs a + a { border-left: var(--border); }
+  .langs a:hover { background: var(--lime); }
+  .langs a[aria-current] { background: var(--ink); color: var(--lime); }
+
+  .menu { display: none; position: relative; }
+  .menu summary { list-style: none; cursor: pointer; width: 44px; height: 44px; display: grid; place-items: center; border: var(--border); border-radius: 999px; background: var(--paper); }
+  .menu summary::-webkit-details-marker { display: none; }
+  .burger, .burger::before, .burger::after { display: block; width: 18px; height: 2px; background: var(--ink); position: relative; }
+  .burger::before, .burger::after { content: ''; position: absolute; left: 0; }
+  .burger::before { top: -6px; } .burger::after { top: 6px; }
+  .menu ul {
+    list-style: none; position: absolute; right: 0; top: 54px; min-width: 220px;
+    background: var(--paper); border: var(--border); box-shadow: var(--shadow); padding: 8px;
+  }
+  .menu a[aria-current='page'] { background: var(--ink); color: var(--lime); }
+
+  @media (max-width: 880px) {
+    .nav { display: none; }
+    .langs { margin-left: auto; }
+    .menu { display: block; }
+    .bar { gap: 12px; }
+  }
+  @media (max-width: 380px) {
+    .l1 { font-size: 12px; } .l2 { font-size: 18.5px; }
+    .langs a { padding: 7px 8px; }
+  }
+</style>

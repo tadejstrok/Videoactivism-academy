@@ -1,0 +1,280 @@
+---
+import Barber from '../../../components/Barber.astro';
+import Base from '../../../layouts/Base.astro';
+import Arrow from '../../../components/Arrow.astro';
+import StepCard from '../../../components/StepCard.astro';
+import { langs, localePath, useTranslations, type Lang } from '../../../i18n/ui';
+import { getModules, md, pad } from '../../../lib/modules';
+
+export function getStaticPaths() {
+  return langs.flatMap((lang) =>
+    getModules(lang).map(({ module }) => ({ params: { lang, slug: module.slug } })),
+  );
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const all = getModules(lang);
+const i = all.findIndex((x) => x.module.slug === Astro.params.slug);
+const { module: m, translated } = all[i];
+const prev = all[i - 1]?.module;
+const next = all[i + 1]?.module;
+const total = m.steps.reduce((s, x) => s + x.minutes, 0);
+const contentLang = translated ? lang : 'en';
+---
+<Base lang={lang} path={`modules/${m.slug}`} title={m.title} description={m.summary}>
+  <section class={`top c-${m.color}`}>
+    <div class="wrap">
+      <a class="back no-print" href={localePath(lang, 'modules')}><Arrow dir="left" /> {t('module.all')}</a>
+
+      {!translated && <p class="notice" role="note">{t('module.untranslated')}</p>}
+
+      <div class="hero" lang={contentLang}>
+        <div class="title-col">
+          <p class="kick"><span class="label">{t('module.number')}</span><Barber as="span" class="num" text={pad(m.number)} /></p>
+          <Barber as="h1" class="h1 title" text={m.title} />
+          <p class="lead">{m.summary}</p>
+          <div class="chips">
+            <span class="chip chip--ink">{m.duration} {t('module.min')}</span>
+            {m.variants && <span class="chip">{t('module.variants')}: {m.variants.map((v) => `${v.minutes}`).join(' / ')} {t('module.min')}</span>}
+            {m.topics.map((x) => <span class="chip">{x}</span>)}
+          </div>
+        </div>
+        <div class="goals">
+          <p class="label">{t('module.byTheEnd')}</p>
+          <ul class="arrow-list">{m.objectives.map((o) => <li>{o}</li>)}</ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky session timeline -->
+  <nav class="timeline no-print" aria-label={t('module.session')}>
+    <div class="wrap">
+      <ol class="clips">
+        {m.steps.map((s, n) => (
+          <li style={`flex:${s.minutes / total}`}>
+            <a href={`#step-${n + 1}`} class={`clip t-${s.type}`} data-clip={n}>
+              <span class="cn">{pad(n + 1)}</span>
+              <span class="ct">{s.title}</span>
+              <span class="cm">{s.minutes}′</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+      <div class="playhead" aria-hidden="true"></div>
+    </div>
+  </nav>
+
+  <div class="wrap body" lang={contentLang}>
+    <div class="col">
+      <details class="about paper">
+        <summary>
+          <span class="h3">{t('module.about')}</span>
+          <span class="desc-first">{m.description[0]}</span>
+          <span class="more" aria-hidden="true">+</span>
+        </summary>
+        <div class="desc-rest">{m.description.slice(1).map((p) => <p>{p}</p>)}</div>
+      </details>
+
+      <Barber class="h2 sec" text={t('module.session')} />
+      <div class="steps">
+        {m.steps.map((s, n) => <StepCard step={s} index={n} lang={lang} />)}
+      </div>
+    </div>
+  </div>
+
+  <!-- Facilitator toolkit -->
+  <section class="section section--ink toolkit" id="toolkit">
+    <div class="wrap">
+      <div class="section-head">
+        <Barber class="h2" text={t('module.toolkit')} />
+        <p class="lead">{t('module.toolkitLead')}</p>
+        <div class="no-print"><button class="btn btn--lime" type="button" onclick="window.print()">{t('module.print')}</button></div>
+      </div>
+
+      <div class="tk" lang={contentLang}>
+        <div class="tk-block wide">
+          <h3 class="tk-title">{t('module.outcomes')}</h3>
+          <ol class="outcomes">
+            {m.outcomes.map((o, n) => (
+              <li>
+                <p class="o-head"><span>{n + 1}</span>{o.outcome}</p>
+                <dl>
+                  <div><dt>{t('module.content')}</dt><dd>{o.content}</dd></div>
+                  <div><dt>{t('module.methods')}</dt><dd>{o.methods}</dd></div>
+                  <div><dt>{t('module.evaluation')}</dt><dd>{o.evaluation}</dd></div>
+                </dl>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <div class="tk-block">
+          <h3 class="tk-title">{t('module.materials')}</h3>
+          <ul class="materials">
+            {m.materials.map((x) => (
+              <li><span class={`ico k-${x.kind}`} aria-hidden="true"></span><span><strong>{x.form}</strong>{x.name}</span></li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="tk-block">
+          {m.variants && (
+            <>
+              <h3 class="tk-title">{t('module.versions')}</h3>
+              <ul class="variants">
+                {m.variants.map((v) => <li><span class="chip chip--yellow">{v.minutes} {t('module.min')}</span><p>{v.text}</p></li>)}
+              </ul>
+            </>
+          )}
+          <h3 class="tk-title">{t('module.evaluation')}</h3>
+          {m.evaluation.map((e) => <p set:html={md(e)} />)}
+          <h3 class="tk-title">{t('module.targetGroup')}</h3>
+          {m.targetGroup.map((e) => <p>{e}</p>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pager wrap no-print" aria-label="Modules">
+    {prev ? <a class="pg card" href={localePath(lang, `modules/${prev.slug}`)}><span class="label"><Arrow dir="left" /> {t('module.prev')}</span><strong>{pad(prev.number)} · {prev.title}</strong></a> : <span></span>}
+    {next ? <a class="pg card nx" href={localePath(lang, `modules/${next.slug}`)}><span class="label">{t('module.next')} <Arrow /></span><strong>{pad(next.number)} · {next.title}</strong></a> : <span></span>}
+  </nav>
+</Base>
+
+<script>
+  // Highlight the clip for the step currently in view and move the playhead.
+  const clips = [...document.querySelectorAll<HTMLAnchorElement>('[data-clip]')];
+  const head = document.querySelector<HTMLElement>('.playhead');
+  const steps = [...document.querySelectorAll<HTMLElement>('[data-step]')];
+  const setActive = (n: number) => {
+    clips.forEach((c, i) => c.toggleAttribute('aria-current', i === n));
+    const c = clips[n];
+    if (c && head) {
+      const r = c.getBoundingClientRect();
+      const p = c.closest('.wrap')!.getBoundingClientRect();
+      head.style.transform = `translateX(${r.left - p.left + r.width / 2}px)`;
+      head.style.opacity = '1';
+    }
+  };
+  const io = new IntersectionObserver(
+    (entries) => {
+      const vis = entries.filter((e) => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (vis[0]) setActive(Number((vis[0].target as HTMLElement).dataset.step));
+    },
+    { rootMargin: '-35% 0px -55% 0px' },
+  );
+  steps.forEach((s) => io.observe(s));
+  addEventListener('resize', () => {
+    const cur = clips.findIndex((c) => c.hasAttribute('aria-current'));
+    if (cur >= 0) setActive(cur);
+  });
+</script>
+
+<style>
+  .top { padding: 28px 0 56px; }
+  .back { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; margin-bottom: 24px; }
+  .back :global(svg) { width: 28px; height: 14px; }
+  .notice { background: var(--paper); border: var(--border); border-left: 10px solid var(--coral); padding: 12px 16px; font-weight: 600; margin-bottom: 24px; max-width: 760px; }
+  .hero { display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; align-items: center; }
+  .title-col { display: grid; gap: 18px; }
+  .kick { display: flex; align-items: baseline; gap: 12px; }
+  .kick .num { font-size: 64px; --b-fill: var(--ink); }
+  .title { font-size: clamp(28px, 3.9vw, 52px); }
+  .goals {
+    background: var(--blob); border: var(--border); border-radius: 28px;
+    padding: clamp(22px, 3vw, 34px); transform: rotate(1.2deg);
+    box-shadow: 10px 12px 0 var(--coral), 10px 12px 0 2px var(--ink);
+  }
+  .goals .label { margin-bottom: 14px; }
+  .goals .arrow-list { gap: 10px; font-size: 16px; line-height: 1.4; font-weight: 600; }
+  .goals .arrow-list li { grid-template-columns: 30px 1fr; gap: 8px; }
+  .goals .arrow-list li::before { width: 30px; height: 15px; filter: brightness(0); }
+  @media (max-width: 980px) { .hero { grid-template-columns: 1fr; } }
+
+  /* Timeline */
+  .timeline { position: sticky; top: var(--header-h); z-index: 40; background: var(--ink); padding: 10px 0 14px; border-bottom: var(--border); }
+  .timeline .wrap { position: relative; }
+  .clips { list-style: none; display: flex; gap: 4px; }
+  .clips li { min-width: 0; }
+  .clip {
+    display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 8px;
+    height: 44px; padding: 0 10px; border: 2px solid var(--ink); border-radius: 6px;
+    text-decoration: none; font-size: 14px; font-weight: 700; color: var(--ink);
+    outline: 2px solid transparent; transition: transform .15s;
+    box-shadow: inset 0 -6px 0 rgba(0,0,0,.12);
+  }
+  .clip.t-input { color: #fff; }
+  .clip:hover { transform: translateY(-2px); }
+  .clip[aria-current] { outline-color: var(--lime); outline-offset: 2px; }
+  .cn { font-weight: 900; }
+  .ct { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cm { font-weight: 800; opacity: .8; }
+  .playhead {
+    position: absolute; left: 0; top: -10px; bottom: -14px; width: 3px; margin-left: -1.5px;
+    background: var(--coral); opacity: 0; transition: transform .3s ease, opacity .3s; pointer-events: none;
+  }
+  .playhead::before { content: ''; position: absolute; top: 0; left: -6px; border: 7.5px solid transparent; border-top: 10px solid var(--coral); }
+  @media (max-width: 760px) {
+    .ct { display: none; }
+    .clip { grid-template-columns: 1fr; justify-items: center; gap: 0; padding: 0 2px; height: 40px; font-size: 12px; line-height: 1.1; }
+  }
+
+  /* Body */
+  .body { padding-top: 48px; padding-bottom: 80px; }
+  .col { max-width: var(--read); margin: 0 auto; }
+  .about summary { list-style: none; cursor: pointer; display: grid; gap: 10px; position: relative; padding-right: 48px; }
+  .about summary::-webkit-details-marker { display: none; }
+  .desc-first { color: var(--muted); }
+  .more { position: absolute; right: 0; top: -4px; width: 38px; height: 38px; border: var(--border); border-radius: 50%; display: grid; place-items: center; font-weight: 900; font-size: 22px; background: var(--lime); transition: transform .2s; }
+  .about[open] .more { transform: rotate(45deg); }
+  .desc-rest { margin-top: 14px; color: var(--muted); }
+  .sec { margin: 56px 0 24px; }
+  .steps { display: grid; gap: 32px; }
+
+  /* Toolkit */
+  .tk { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .tk-block.wide { grid-column: 1 / -1; }
+  .tk-title { font-size: 22px; font-weight: 900; color: var(--lime); text-transform: uppercase; margin: 0 0 16px; }
+  .tk-block p + .tk-title, .tk-block ul + .tk-title { margin-top: 32px; }
+  .tk-block p { color: rgba(255,255,255,.85); }
+  .outcomes { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .outcomes li { border: 2px solid var(--lime); padding: 20px; }
+  .o-head { font-weight: 800; font-size: 19px; line-height: 1.3; display: flex; gap: 12px; margin-bottom: 16px; }
+  .o-head span { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--lime); color: var(--ink); display: grid; place-items: center; font-weight: 900; font-size: 15px; }
+  .outcomes dl { margin: 0; display: grid; gap: 12px; }
+  .outcomes dt { font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--lime); }
+  .outcomes dd { margin: 2px 0 0; font-size: 15px; line-height: 1.5; color: rgba(255,255,255,.85); }
+  .materials { list-style: none; display: grid; gap: 10px; }
+  .materials li { display: grid; grid-template-columns: 40px 1fr; gap: 14px; align-items: start; background: rgba(255,255,255,.06); padding: 12px; font-size: 15px; line-height: 1.45; }
+  .materials strong { display: block; color: var(--lime); }
+  .ico { width: 40px; height: 40px; border-radius: 8px; border: 2px solid #fff; }
+  .k-presentation { background: var(--blue); }
+  .k-case { background: var(--peach); }
+  .k-worksheet { background: var(--yellow); }
+  .k-equipment { background: var(--coral); }
+  .variants { list-style: none; display: grid; gap: 12px; }
+  .variants li { display: grid; gap: 6px; justify-items: start; }
+  .variants .chip { color: var(--ink); }
+  @media (max-width: 860px) { .tk { grid-template-columns: 1fr; } }
+
+  /* Pager */
+  .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding-top: 48px; padding-bottom: 64px; }
+  .pg { display: grid; gap: 6px; padding: 20px; text-decoration: none; }
+  .pg .label { display: inline-flex; align-items: center; gap: 8px; }
+  .pg :global(svg) { width: 26px; height: 13px; }
+  .nx { text-align: right; }
+  .nx .label { justify-content: flex-end; }
+  .pg:hover { background: var(--lime); }
+  @media (max-width: 600px) { .pager { grid-template-columns: 1fr; } }
+
+  @media print {
+    .top { padding: 0; }
+    .goals { transform: none; box-shadow: none; background: #fff; }
+    .toolkit { background: #fff !important; color: #000; }
+    .tk-title, .outcomes dt, .materials strong { color: #000; }
+    .tk-block p, .outcomes dd { color: #000; }
+    .about .desc-rest { display: block; }
+  }
+</style>

@@ -1,0 +1,133 @@
+{
+  "slug": "satire",
+  "number": 3,
+  "color": "yellow",
+  "title": "How and Why Satire Works",
+  "summary": "Why humour gets through when the news doesn't, and how to use satire to challenge power without punching down or spreading fakes.",
+  "topics": ["Irony & exaggeration", "Punching up", "Case study: Prime Time"],
+  "description": [
+    "The lesson introduces satire as a form of civic, media and digital communication. It explores how satire works, why it is effective for social and political issues, and how humour helps audiences engage with topics that otherwise feel distant, complex or overwhelming.",
+    "Participants analyse satire as a way to challenge power, expose contradictions, break through filter bubbles and create socially relevant messages. They also reflect on its responsibilities and risks: trust, ethics, manipulation, audience interpretation and the use of AI in satirical content.",
+    "The case study is Prime Time, a popular Croatian satirical show by Borna Sor and Domagoj Zovak. It offers a weekly roundup of Croatian politics that mocks scandals and dissects everyday absurdities, combining humour, media criticism, social commentary and civic engagement. Other creators who use satire for political commentary can be swapped in, depending on the national context."
+  ],
+  "duration": 90,
+  "variants": [
+    { "minutes": 60, "text": "Shorten the group work component." },
+    { "minutes": 120, "text": "Add a creative task: groups design their own satirical message or counter-narrative. They define the topic, target audience, key message, format, tone, satirical device, caption/script/headline and intended effect, using humour responsibly so it doesn't reinforce stereotypes, hate speech or misinformation." }
+  ],
+  "objectives": [
+    "Understand the role of satire in civic and media communication",
+    "Explain how satire responds to fear, apathy, disinformation and powerlessness",
+    "Analyse how humour, exaggeration, irony and sarcasm carry a social or political message",
+    "Distinguish satire from misinformation, offensive humour and manipulative content",
+    "Reflect on the ethical responsibilities of satirical communication",
+    "Develop a basic concept for a satirical message or counter-narrative"
+  ],
+  "targetGroup": [
+    "Young people in a non-formal education programme focused on civic, media and digital competences. It's especially relevant for those who create content online, engage in social commentary, or want to use humour and creative communication for social change.",
+    "It can be adapted for school classes, youth groups or participants with less content creation experience."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Explain why satire can be a powerful form of civic communication",
+      "content": "Satire as a response to powerlessness and political apathy; humour as an entry point into difficult topics; satire as a tool for public engagement",
+      "methods": "Short input; guided discussion; analysis of examples",
+      "evaluation": "Group discussion; oral reflection"
+    },
+    {
+      "outcome": "Identify key elements of effective satire",
+      "content": "Irony; exaggeration; sarcasm; contrast; absurdity; emotional hook; timing; target of criticism; punchline; call to action",
+      "methods": "Workshop; analysis of examples; small group work",
+      "evaluation": "Completed satire analysis worksheet; group presentation"
+    },
+    {
+      "outcome": "Reflect on the ethical and political responsibility of satire",
+      "content": "Trust; honesty; satire vs. fake news; punching up vs. punching down; risk of misunderstanding; legal and social consequences",
+      "methods": "Moderated discussion; case study analysis; debate",
+      "evaluation": "Reflection questions; comments from group and facilitator"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "What do we laugh at, and why?",
+      "minutes": 10,
+      "prompts": [
+        "What was the last social or political issue you saw presented through humour?",
+        "Did humour make the issue easier to understand?",
+        "Can humour make people care about serious topics?"
+      ],
+      "keyMessage": "Satire is not only entertainment. It is a form of communication and social commentary."
+    },
+    {
+      "type": "input",
+      "title": "How and why satire works",
+      "minutes": 20,
+      "bullets": [
+        "Satire as a response to powerlessness and political apathy",
+        "Humour as a psychological defence against fear and uncertainty",
+        "Breaking through filter bubbles to reach people who avoid traditional news",
+        "Why trust and honesty matter in satirical communication",
+        "Satire as a \"news aggregator\" that translates complex topics into accessible formats",
+        "Satire in the age of AI and algorithmic content"
+      ],
+      "keyMessage": "Satire works because it combines emotional engagement, critical thinking and a recognisable social reality."
+    },
+    {
+      "type": "case",
+      "title": "Case study: Prime Time",
+      "minutes": 25,
+      "body": [
+        "Treat satire not only as comedy, but as a format that can inform, criticise and mobilise."
+      ],
+      "prompts": [
+        "What social or political issues does this satire address?",
+        "Who is the target audience?",
+        "What makes the format accessible or shareable?",
+        "How does it combine humour with information?",
+        "Why might audiences trust a satirical voice more than a \"neutral\" media voice?",
+        "What are the risks of this approach?"
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Group activity: dissecting satire",
+      "minutes": 25,
+      "activity": {
+        "intro": "Each small group analyses one satirical example (a meme, sketch, short video, post or headline) and identifies:",
+        "steps": [
+          { "title": "Topic", "text": "What topic or problem is it about?" },
+          { "title": "Target of criticism", "text": "Who or what is being criticised?" },
+          { "title": "Audience", "text": "Who is it made for?" },
+          { "title": "Humorous device", "text": "Irony, exaggeration, contrast, absurdity…?" },
+          { "title": "Key message", "text": "What is it really saying?" },
+          { "title": "Emotional reaction", "text": "What should the audience feel?" },
+          { "title": "Verdict", "text": "Is it clear, responsible and effective?" }
+        ],
+        "note": "Each group briefly presents its analysis."
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Reflection and closing",
+      "minutes": 10,
+      "prompts": [
+        "When is satire useful?",
+        "When can satire become harmful?",
+        "What makes satire different from disinformation?",
+        "How can satire move people from laughter to reflection or action?"
+      ],
+      "keyMessage": "Everyone shares one key takeaway."
+    }
+  ],
+  "materials": [
+    { "name": "How and Why Satire Works", "form": "Presentation", "kind": "presentation" },
+    { "name": "Examples of satirical videos, posts, memes or headlines", "form": "Digital examples", "kind": "case" },
+    { "name": "Satire analysis worksheet", "form": "Worksheet", "kind": "worksheet" },
+    { "name": "Template for developing a satirical message (120-min version)", "form": "Worksheet", "kind": "worksheet" },
+    { "name": "Laptop, projector and internet connection", "form": "Technical equipment", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "A combination of discussion, group work and short reflection."
+  ]
+}

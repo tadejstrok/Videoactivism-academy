@@ -1,0 +1,69 @@
+---
+import { localePath, useTranslations, type Lang } from '../i18n/ui';
+import { site } from '../i18n/site';
+import Barber from './Barber.astro';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const partners = site[lang].about.partners;
+---
+<footer class="site section--ink">
+  <div class="wrap grid">
+    <div class="brand">
+      <div class="name"><Barber as="p" text="Videoactivism" /><Barber as="p" class="n2" text="Academy" /></div>
+      <p class="small">{t('footer.license')}</p>
+    </div>
+
+    <div>
+      <p class="label">{t('footer.partners')}</p>
+      <ul class="logos">
+        {partners.map((p) => (
+          <li><a href={p.url} rel="noopener" target="_blank"><img src={`/${p.logo}`} alt={p.name} width="111" height="38" /></a></li>
+        ))}
+      </ul>
+      <nav class="links" aria-label="Footer">
+        <a href={localePath(lang, 'program')}>{t('nav.program')}</a>
+        <a href={localePath(lang, 'modules')}>{t('nav.modules')}</a>
+        <a href={localePath(lang, 'about')}>{t('nav.about')}</a>
+      </nav>
+    </div>
+
+    <div class="eu">
+      {lang === 'sl' ? (
+        <img class="eu-logo" src="/EU-logo.png" alt={t('footer.eulogo')} width="254" height="54" />
+      ) : (
+      <div class="eu-mark">
+        <svg viewBox="0 0 60 40" aria-hidden="true" width="60" height="40">
+          <rect width="60" height="40" fill="#003399" />
+          {Array.from({ length: 12 }, (_, i) => {
+            const a = (i * 30 * Math.PI) / 180;
+            return <circle cx={30 + 12 * Math.sin(a)} cy={20 - 12 * Math.cos(a)} r="1.6" fill="#FFCC00" />;
+          })}
+        </svg>
+        <span>{t('footer.eulogo')}</span>
+      </div>
+      )}
+      <p class="small">{t('footer.eu')}</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer.site { padding: 64px 0 48px; border-top: var(--border); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 40px; }
+  .name { display: grid; justify-items: start; gap: 2px; font-size: 22px; margin-bottom: 18px; --b-fill: var(--lime); --b-ext: var(--blue); --b-gap: var(--ink); }
+  .name :global(.barber) { line-height: 1; }
+  .name .n2 { font-size: 36px; }
+  .small { font-size: 13px; line-height: 1.5; color: rgba(255,255,255,.72); }
+  .label { color: var(--lime); margin-bottom: 14px; }
+  .logos { list-style: none; display: flex; gap: 28px; align-items: center; margin-bottom: 28px; }
+  .logos img { filter: invert(1) brightness(2); height: 34px; width: auto; }
+  .links { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .links a { font-weight: 700; text-decoration: none; }
+  .links a:hover { color: var(--lime); }
+  .eu-mark { display: flex; align-items: center; gap: 12px; font-weight: 800; margin-bottom: 14px; }
+  .eu-logo { background: #fff; padding: 8px 12px; margin-bottom: 14px; width: 254px; }
+  .eu-mark svg { flex: none; outline: 1px solid rgba(255,255,255,.3); }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; gap: 32px; } }
+</style>

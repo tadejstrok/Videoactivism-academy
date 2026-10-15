@@ -1,0 +1,150 @@
+{
+  "slug": "vertical-video",
+  "number": 4,
+  "color": "peach",
+  "title": "Short-Form Vertical Video for Digital Activism",
+  "summary": "Six formats, one structure (Hook → Core → Call to Action) and the platform rules you need to turn a message into a video people don't scroll past.",
+  "topics": ["6 video formats", "Hook → Core → CTA", "Platforms & shadowbans"],
+  "description": [
+    "A practical, hands-on guide to using short-form vertical video for civic engagement, political commentary and social activism. It explains why vertical video has become the dominant format, and how its full-screen orientation creates immediacy, urgency and authenticity.",
+    "Participants analyse a full taxonomy of short-form styles: \"boomer car rants\", multi-persona dialogues, satire, video essays and vox populi interviews. They learn practical strategies including the \"Lookout Mindset\", trend-jacking, steelmanning counter-arguments, and scripts built on the Hook → Core → Call to Action framework.",
+    "The lesson covers psychological tactics such as memes as Trojan horses for complex or radical ideas, persona building, and using confrontation to increase shareability.",
+    "Finally, it covers the technical logistics: platform specs for TikTok, Instagram Reels and YouTube Shorts, publishing best practices, safety warnings, and how to avoid algorithmic censorship or shadowbanning on sensitive political topics."
+  ],
+  "duration": 90,
+  "variants": [
+    { "minutes": 60, "text": "Focus only on the video taxonomy and the Hook → Core → Call to Action structure. Skip the storyboarding exercise." },
+    { "minutes": 120, "text": "Extend the group activity into a live workshop: groups record and edit a raw 60-second vertical draft on their phones, followed by a class screening." }
+  ],
+  "objectives": [
+    "Compare six core vertical formats (rants, dialogues, satire/sketches, video essays, reactions, vox populi) and what each needs to produce",
+    "Use the Lookout Mindset, trend integration and AI-assisted steelmanning to sharpen a message",
+    "Apply Hook → Core → Call to Action, humour as a Trojan horse, relatable personas and clear oppositional framing",
+    "Respect platform limits and caption zones, and avoid safety hazards and algorithmic penalties on sensitive topics"
+  ],
+  "targetGroup": [
+    "Young creators, digital activists, NGO workers, communications students and civic organisers who want to turn social and political messages into engaging short-form video."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Tell vertical video formats apart and know their strategic uses",
+      "content": "Mobile consumption trends; 6 formats: rants, dialogues, satire, essays, reacts, vox populi",
+      "methods": "Visual presentation with real TikTok/Reels examples (e.g. @danesjenovdan)",
+      "evaluation": "Format identification quiz; oral participation"
+    },
+    {
+      "outcome": "Apply messaging frameworks and psychological hooks",
+      "content": "Hook → Core → CTA; Trojan horse tactics; Wojak relatability; steelmanning; persona building",
+      "methods": "Guided script breakdown; analysis of viral political hooks",
+      "evaluation": "Completed script outline worksheet"
+    },
+    {
+      "outcome": "Use trend-jacking and topic discovery strategically",
+      "content": "The Lookout Mindset; trend hijacking (e.g. Labubu, Breaking Bad); AI-assisted brainstorming",
+      "methods": "Group brainstorming with trending pop culture topics",
+      "evaluation": "Quality of topic–trend pairings in group work"
+    },
+    {
+      "outcome": "Comply with platform rules, publishing tactics and moderation",
+      "content": "Platform limits (TikTok, Instagram, Shorts); caption placement; safety don'ts; shadowbanning and sensitive-topic censorship",
+      "methods": "Lecture input; analysis of platform terms and suppressed keywords",
+      "evaluation": "Quiz; final checklist review"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "The vertical revolution",
+      "minutes": 10,
+      "bullets": [
+        "**The mobile context:** social media went from static to video, and over 90% of social media consumption happens on mobile.",
+        "**Portrait vs. landscape:** orientation is a friction barrier. Vertical video takes 100% of the screen and feels intimate, urgent and raw.",
+        "**A call to creators:** \"The world is run by those who show up.\" Post consistently on TikTok, Instagram and YouTube Shorts."
+      ]
+    },
+    {
+      "type": "input",
+      "title": "Taxonomy of short-form video formats",
+      "minutes": 20,
+      "body": [
+        "Six formats, each with a different production effort and strategic advantage:"
+      ],
+      "formats": [
+        { "name": "Monologue rant", "text": "Direct to camera (e.g. \"boomer car rants\"). Very authentic and fast to make, but audiences tire of it." },
+        { "name": "Dialogue", "text": "One creator plays two personas looking off-camera. Great for tackling talking points and counter-arguments in a controlled, fun way." },
+        { "name": "Sketch & satire", "text": "High viral potential. Humour disarms prejudice." },
+        { "name": "Video essay / explainer", "text": "Faceless voiceover over B-roll and graphics. Allows deep policy dives without being on camera, but needs heavy scripting." },
+        { "name": "React", "text": "Relies on drama-bait and provocation." },
+        { "name": "Vox populi", "text": "Street interviews. Very authentic, but you give up some control over the narrative." }
+      ]
+    },
+    {
+      "type": "input",
+      "title": "Strategy, psychology and technical tactics",
+      "minutes": 25,
+      "bullets": [
+        "**The Lookout Mindset:** social listening. Scan news feeds, comment sections, and pop and online culture to spot existing attention you can hijack.",
+        "**Steelmanning:** anticipate the strongest version of your opponent's argument and address it. AI tools can help test counter-points.",
+        "**The Trojan horse:** humour and memes slip past audience defences to deliver a political idea.",
+        "**Relatability (Wojak / \"literally me\"):** show genuine emotion, stay unpolished, speak directly to \"you\".",
+        "**Confrontation:** content with a clear opponent is shared twice as much. Direct, bold honesty (\"pouring pure wine\") builds trust."
+      ],
+      "callout": {
+        "title": "Every video: Hook → Core → CTA",
+        "items": [
+          "Hook: the first 3 seconds",
+          "Core message",
+          "Call to action"
+        ]
+      },
+      "specs": [
+        { "name": "TikTok", "text": "Flexible length" },
+        { "name": "Instagram Reels", "text": "Recommended up to 3 min" },
+        { "name": "YouTube Shorts", "text": "Up to 3 min" }
+      ],
+      "warnings": [
+        "Put the hook on screen as a caption in seconds 1–3. Write descriptions as teasers with relevant keywords and hashtags.",
+        "Never film while driving or biking.",
+        "Watch out for shadowbanning on war, violence or sensitive conflicts (e.g. Israel/Palestine). Use coded language (\"algospeak\") when necessary."
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Group activity: scripting a vertical activist video",
+      "minutes": 20,
+      "activity": {
+        "intro": "In groups of 3–4, draft a script and storyboard for a 60-second vertical video on a civic or social issue.",
+        "steps": [
+          { "title": "Pick a format", "text": "Choose one from the taxonomy, e.g. dialogue, satire or explainer." },
+          { "title": "Write a 3-second hook", "text": "Both visual and verbal." },
+          { "title": "Add a Trojan horse", "text": "A trend, humour or a pop-culture reference." },
+          { "title": "Name the opponent", "text": "Identify a clear opponent or counter-argument and steelman it." },
+          { "title": "End with a CTA", "text": "A concrete, actionable call to action." }
+        ],
+        "note": "Each group pitches its concept to the class in 90 seconds. Would the first 3 seconds stop you from scrolling?"
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Reflection and closing",
+      "minutes": 15,
+      "prompts": [
+        "How do we balance drama-bait or confrontation with ethical, truthful messaging?",
+        "How can activists discuss heavily moderated political issues without getting their accounts penalised?"
+      ],
+      "keyMessage": "Review the technical don'ts (audio quality, safety, caption placement). Consistency beats perfection in short-form."
+    }
+  ],
+  "materials": [
+    { "name": "Slides: mobile stats, horizontal vs. vertical, video taxonomy, memes (Wile E. Coyote, Trojan Horse, Wojak, Labubu)", "form": "Presentation", "kind": "presentation" },
+    { "name": "Downloaded clip examples for each of the 6 formats", "form": "Video case studies", "kind": "case" },
+    { "name": "Scripting template: format, 3-second hook, trend hijack, core message / steelman, CTA", "form": "Worksheet", "kind": "worksheet" },
+    { "name": "Platform spec cheat sheet: lengths, caption safe zones, keyword tips for TikTok, Reels, Shorts", "form": "Reference card", "kind": "worksheet" },
+    { "name": "Laptop, projector, speakers and participants' smartphones", "form": "Technical equipment", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "**Formative:** during the taxonomy input, participants identify the formats of sample videos.",
+    "**Practical:** scripting worksheets are checked for correct use of Hook → Core → CTA and Trojan horse strategies.",
+    "**Peer review:** oral feedback on pitches. Would the first 3 seconds stop a user from scrolling?"
+  ]
+}

@@ -1,0 +1,18 @@
+---
+// Barber is a layered font: the same text is stacked four times
+// (extrusion, side faces, halo, face), each layer in its own colour.
+// Colours come from --b-fill / --b-ext / --b-gap so headings adapt to their background.
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'h2'> {
+  text: string;
+  as?: 'h1' | 'h2' | 'h3' | 'p' | 'span' | 'strong';
+}
+const { text, as: Tag = 'h2', class: cls = '', ...rest } = Astro.props;
+---
+<Tag class={`barber ${cls}`} {...rest}>
+  <span class="b b-shadow" aria-hidden="true">{text}</span>
+  <span class="b b-right" aria-hidden="true">{text}</span>
+  <span class="b b-outline" aria-hidden="true">{text}</span>
+  <span class="b b-fill">{text}</span>
+</Tag>

@@ -1,0 +1,190 @@
+/* ---------- Fonts ---------- */
+@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Regular.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Italic.woff') format('woff'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Medium.woff') format('woff'); font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Semibold.woff') format('woff'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Bold.woff') format('woff'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Extrabold.woff') format('woff'); font-weight: 800; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Black.woff') format('woff'); font-weight: 900; font-display: swap; }
+
+/* Barber: layered display face (caps only). Č Š Ž were added to the web files. */
+@font-face { font-family: 'Barber Fill'; src: url('/fonts/web/Barber-Fill.woff') format('woff'); font-display: block; }
+@font-face { font-family: 'Barber Outline'; src: url('/fonts/web/Barber-Outline.woff') format('woff'); font-display: block; }
+@font-face { font-family: 'Barber Shadow'; src: url('/fonts/web/Barber-Shadow.woff') format('woff'); font-display: block; }
+@font-face { font-family: 'Barber Right'; src: url('/fonts/web/Barber-Right.woff') format('woff'); font-display: block; }
+
+/* ---------- Tokens ---------- */
+:root {
+  --green: #54e86d;
+  --green-grid: rgba(40, 170, 70, 0.35);
+  --blue-deep: #0249b3;
+  --blue: #0067ff;
+  --yellow: #fece00;
+  --lime: #eaf665;
+  --coral: #ff5556;
+  --peach: #ffa990;
+  --ink: #0a0a0f;
+  --ink-grid: rgba(234, 246, 101, 0.07);
+  --paper: #ffffff;
+  --muted: #3b3b44;
+
+  --blob: linear-gradient(180deg, #eaf665 0%, #94ee69 100%);
+  --blob-warm: linear-gradient(180deg, #eaf665 0%, #ff8a6a 100%);
+
+  --font: 'Switzer', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --shadow: 6px 6px 0 var(--ink);
+  --shadow-sm: 4px 4px 0 var(--ink);
+  --border: 2px solid var(--ink);
+
+  --wrap: 1200px;
+  --read: 760px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --header-h: 72px;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 72px); }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--ink);
+  background-color: var(--green);
+  background-image:
+    linear-gradient(var(--green-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--green-grid) 1px, transparent 1px);
+  background-size: 120px 120px;
+  background-position: center top;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+h1, h2, h3, h4 { margin: 0; line-height: 1.05; }
+p { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+ul, ol { margin: 0; padding: 0; }
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip { position: absolute; left: -9999px; top: 8px; z-index: 100; background: var(--ink); color: var(--lime); padding: 8px 16px; }
+.skip:focus { left: 8px; }
+
+.wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+.read { max-width: var(--read); }
+.section { padding: clamp(56px, 9vw, 112px) 0; position: relative; }
+.section--ink {
+  background-color: var(--ink);
+  color: #fff;
+  background-image:
+    linear-gradient(var(--ink-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ink-grid) 1px, transparent 1px);
+  background-size: 120px 120px;
+}
+
+/* ---------- Type ---------- */
+/* Barber stacked headline */
+.barber {
+  --b-fill: var(--blue-deep);
+  --b-ext: var(--blue);
+  --b-gap: var(--green);
+  display: grid;
+  font-weight: 400;
+  line-height: 1.08; /* font metrics are trimmed to cap height + extrusion */
+  letter-spacing: 0;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+.barber > .b { grid-area: 1 / 1; }
+p.barber { margin: 0; }
+.b-shadow { font-family: 'Barber Shadow', var(--font); color: var(--b-ext); }
+.b-right { font-family: 'Barber Right', var(--font); color: var(--b-ext); }
+.b-outline { font-family: 'Barber Outline', var(--font); color: var(--b-gap); }
+.b-fill { font-family: 'Barber Fill', var(--font); color: var(--b-fill); }
+.section--ink .barber, .barber.on-ink { --b-fill: var(--lime); --b-ext: var(--blue); --b-gap: var(--ink); }
+.barber.on-paper { --b-gap: var(--paper); }
+.barber.no-gap { --b-gap: transparent; }
+.barber.flat > .b-shadow, .barber.flat > .b-right { display: none; }
+
+.h1 { font-size: clamp(34px, 6vw, 80px); }
+.h2 { font-size: clamp(26px, 3.8vw, 46px); }
+.h3 { font-size: clamp(21px, 2.4vw, 26px); font-weight: 800; line-height: 1.15; }
+.lead { font-size: clamp(19px, 2.2vw, 24px); line-height: 1.4; }
+.label {
+  font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+}
+.section-head { display: grid; gap: 16px; margin-bottom: clamp(32px, 5vw, 56px); max-width: 760px; }
+.section--ink .h2 { color: var(--lime); }
+
+/* Hand-drawn underline */
+.scribble { position: relative; white-space: nowrap; display: inline-block; }
+.scribble svg { position: absolute; left: -2%; width: 104%; bottom: -0.28em; height: 0.4em; overflow: visible; }
+.scribble path { fill: none; stroke: var(--coral); stroke-width: 4; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+
+mark, .hl {
+  background: linear-gradient(100deg, transparent 0 2%, var(--lime) 2% 97%, transparent 97%);
+  color: inherit; padding: 0 0.15em; border-radius: 4px;
+  box-decoration-break: clone; -webkit-box-decoration-break: clone;
+}
+
+/* ---------- Buttons & chips ---------- */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font: 700 17px/1 var(--font);
+  padding: 16px 26px; border-radius: 999px; border: var(--border);
+  background: var(--blue); color: #fff; text-decoration: none;
+  box-shadow: var(--shadow-sm); transition: transform .12s, box-shadow .12s;
+  cursor: pointer;
+}
+.btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+.btn:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--ink); }
+.btn--ghost { background: var(--paper); color: var(--ink); }
+.btn--lime { background: var(--lime); color: var(--ink); }
+.section--ink .btn { border-color: var(--lime); box-shadow: 4px 4px 0 var(--lime); }
+.btn svg { width: 22px; height: 12px; flex: none; }
+
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 14px; font-weight: 700; line-height: 1;
+  padding: 8px 14px; border-radius: 999px; border: var(--border);
+  background: var(--paper);
+}
+.chip--yellow { background: var(--yellow); }
+.chip--lime { background: var(--lime); }
+.chip--ink { background: var(--ink); color: var(--lime); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* ---------- Cards ---------- */
+.card { background: var(--paper); border: var(--border); box-shadow: var(--shadow); }
+.paper { background: var(--paper); border: var(--border); box-shadow: var(--shadow); padding: clamp(22px, 4vw, 40px); }
+
+/* ---------- Step type colours ---------- */
+.t-intro { background: var(--yellow); }
+.t-input { background: var(--blue); color: #fff; }
+.t-case { background: var(--peach); }
+.t-activity { background: var(--coral); }
+.t-reflection { background: var(--lime); }
+
+/* ---------- Arrow list ---------- */
+.arrow-list { list-style: none; display: grid; gap: 14px; }
+.arrow-list li { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; }
+.arrow-list li::before {
+  content: ''; width: 44px; height: 22px; margin-top: 0.25em;
+  background: url('/arrow.png') center / contain no-repeat;
+}
+.on-green .arrow-list li::before { filter: brightness(0); }
+
+/* ---------- Motion ---------- */
+@keyframes breathe { 0%, 100% { transform: scale(1) rotate(var(--rot, 0deg)); } 50% { transform: scale(1.015) rotate(var(--rot, 0deg)); } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  body { background: #fff; font-size: 11pt; }
+  .no-print, header.site, footer.site, .figure { display: none !important; }
+  .paper, .card { box-shadow: none; border: 1px solid #999; break-inside: avoid; }
+  .display { text-shadow: none; color: #000; }
+  a { text-decoration: none; }
+}

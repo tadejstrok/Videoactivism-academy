@@ -1,0 +1,48 @@
+---
+import Arrow from './Arrow.astro';
+import Barber from './Barber.astro';
+import { localePath, useTranslations, type Lang } from '../i18n/ui';
+import { pad, type Module } from '../lib/modules';
+
+interface Props { module: Module; lang: Lang }
+const { module: m, lang } = Astro.props;
+const t = useTranslations(lang);
+const total = m.steps.reduce((s, x) => s + x.minutes, 0);
+---
+<a class={`mcard card c-${m.color}`} href={localePath(lang, `modules/${m.slug}`)}>
+  <div class="band">
+    <Barber as="span" class="num no-gap" text={pad(m.number)} />
+    <span class="chip">{m.duration} {t('module.min')}</span>
+  </div>
+  <div class="body">
+    <h3 class="h3">{m.title}</h3>
+    <p class="sum">{m.summary}</p>
+    <div class="clips" aria-hidden="true">
+      {m.steps.map((s) => <span class={`clip t-${s.type}`} style={`flex:${s.minutes / total}`}></span>)}
+    </div>
+    <ul class="topics">{m.topics.map((x) => <li>{x}</li>)}</ul>
+    <span class="go">{t('cta.open')} <Arrow /></span>
+  </div>
+</a>
+
+<style>
+  .mcard { display: flex; flex-direction: column; text-decoration: none; transition: transform .15s, box-shadow .15s; height: 100%; }
+  .mcard:hover { transform: translate(-3px, -3px) rotate(-0.4deg); box-shadow: 10px 10px 0 var(--ink); }
+  .band { display: flex; justify-content: space-between; align-items: flex-start; padding: 18px 22px; border-bottom: var(--border); }
+  .c-blue .band { background: var(--blue); color: #fff; }
+  .c-coral .band { background: var(--coral); }
+  .c-yellow .band { background: var(--yellow); }
+  .c-peach .band { background: var(--peach); }
+  .num { font-size: 54px; --b-fill: var(--ink); --b-ext: var(--paper); }
+  .c-blue .num { --b-fill: var(--lime); --b-ext: var(--ink); }
+  .band .chip { color: var(--ink); }
+  .body { padding: 22px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+  .sum { color: var(--muted); font-size: 16px; line-height: 1.5; }
+  .clips { display: flex; gap: 3px; height: 12px; }
+  .clip { border: 1.5px solid var(--ink); border-radius: 3px; }
+  .topics { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+  .topics li { font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: #f0f0ea; }
+  .go { margin-top: auto; display: inline-flex; align-items: center; gap: 10px; font-weight: 800; color: var(--blue-deep); }
+  .go :global(svg) { width: 30px; height: 15px; transition: transform .15s; }
+  .mcard:hover .go :global(svg) { transform: translateX(4px); }
+</style>

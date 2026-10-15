@@ -1,0 +1,142 @@
+{
+  "slug": "counter-narratives",
+  "number": 2,
+  "color": "coral",
+  "title": "From Hate to Change: Counter-Narratives in Action",
+  "summary": "Spot the harmful stories that shape public opinion, and learn to answer them with facts, context and dignity instead of insults.",
+  "topics": ["Narratives", "Emotional triggers", "5-step counter-narrative"],
+  "description": [
+    "The lesson introduces narratives and counter-narratives as tools for understanding, challenging and transforming harmful messages in media, politics and digital communication. It explores how dominant narratives shape public perception of social issues. It shows how they can justify discrimination, violence or exclusion, and how counter-narratives can restore dignity, provide context and promote human rights.",
+    "Participants analyse how harmful narratives appear in headlines, social media posts, comments and public discourse. They learn to identify emotional triggers (fear, anger, disgust, humiliation, status threat and distrust) and how these are used to manipulate audiences or mobilise hostility toward marginalised groups.",
+    "The lesson then focuses on practical strategies: exposing manipulation, introducing facts and context, shifting perspective, protecting the dignity of victims and marginalised groups, and reframing the conversation around human rights, equality and social responsibility.",
+    "Examples relate to sexism, gender-based violence, racism, homophobia, transphobia and extremism. They can be swapped for locally relevant cases of harmful reporting, discriminatory discourse, online hate speech or activist counter-campaigns."
+  ],
+  "duration": 90,
+  "objectives": [
+    "Understand the difference between a narrative and a counter-narrative",
+    "Identify emotional triggers in harmful narratives: fear, anger, disgust, humiliation, distrust",
+    "Analyse how counter-narratives expose manipulation, provide facts, shift perspective and defend human rights",
+    "Tell an effective counter-narrative apart from an insult, personal attack, deflection or empty sarcasm",
+    "Develop a basic counter-narrative in response to a harmful narrative"
+  ],
+  "targetGroup": [
+    "Young people in a non-formal education programme focused on civic, media and digital competences. It's especially relevant for those who are active online, engage with social and political content, take part in comment sections, or want to use digital communication for social change.",
+    "It can be adapted for school classes, youth groups, student organisations, young activists or participants with less experience in media analysis and content creation."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Explain the difference between narratives and counter-narratives",
+      "content": "Narratives as stories that shape how society understands problems, victims, responsibility and solutions; counter-narratives as deliberate messages that challenge harmful dominant narratives",
+      "methods": "Short input; guided discussion; analysis of examples",
+      "evaluation": "Oral reflection; facilitator questions"
+    },
+    {
+      "outcome": "Identify harmful narratives and the emotions they activate",
+      "content": "Fear, anger, disgust, humiliation, status threat, loss of control, conspiracy and distrust; how emotional triggers reduce critical thinking and mobilise hostility",
+      "methods": "Presentation; example analysis; pair work",
+      "evaluation": "Group discussion; completed analysis task"
+    },
+    {
+      "outcome": "Analyse the elements of an effective counter-narrative",
+      "content": "Exposing manipulation; providing facts; shifting perspective; restoring dignity; reframing toward human rights, equality and responsibility",
+      "methods": "Workshop; small group work; case study analysis",
+      "evaluation": "Group presentation; peer feedback"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "What stories shape our reality?",
+      "minutes": 10,
+      "body": [
+        "The facilitator opens with a short introduction of the Center for Civil Initiatives Poreč, a feminist, human rights and peacebuilding non-profit that has promoted human rights and active citizenship since 1992. Then the facilitator leads a short discussion."
+      ],
+      "prompts": [
+        "Where do we encounter social and political \"stories\" every day?",
+        "Can headlines, posts or comments influence how we see certain groups of people?",
+        "Can a story make someone appear guilty, dangerous, invisible or less worthy of empathy?",
+        "Have you ever seen a post or comment that challenged a harmful stereotype or false claim?"
+      ],
+      "keyMessage": "Narratives are not neutral. They decide what society sees as the problem, who is blamed, who counts as a victim and which solutions seem possible."
+    },
+    {
+      "type": "input",
+      "title": "What is a counter-narrative?",
+      "minutes": 20,
+      "bullets": [
+        "Narratives as dominant stories that shape public understanding",
+        "Harmful narratives that justify discrimination, violence or exclusion",
+        "Counter-narratives as deliberately crafted messages that challenge or overturn harmful narratives",
+        "The difference between a counter-narrative and a simple opposing opinion",
+        "Examples in comments, posts, visuals, campaigns, public statements, media analyses and advocacy"
+      ],
+      "callout": {
+        "title": "A counter-narrative can…",
+        "items": [
+          "expose manipulation",
+          "provide facts and context",
+          "shift perspective",
+          "defend the dignity and rights of marginalised groups",
+          "reframe the issue around justice, equality and responsibility"
+        ]
+      },
+      "keyMessage": "Counter-narratives matter because narratives shape reality. Left unquestioned, harmful narratives become normal."
+    },
+    {
+      "type": "case",
+      "title": "Case study \"Everyday sexism\": from harmful reporting to counter-narrative",
+      "minutes": 25,
+      "body": [
+        "Participants analyse an example of harmful media reporting or online communication: gender-based violence, sexism, racism, homophobia, transphobia, migration, extremism or another locally relevant issue.",
+        "Notice not only what is said, but what is left unsaid. Harmful reporting may focus on gossip, private details or the perpetrator's feelings while ignoring structural violence, institutional responsibility, victim dignity or available support."
+      ],
+      "prompts": [
+        "What is the dominant narrative in this example?",
+        "Who is being blamed, erased, dehumanised or misrepresented?",
+        "Which emotional trigger is used: fear, anger, disgust, humiliation or distrust?",
+        "What facts or context are missing?",
+        "How could it be reframed to protect dignity and human rights?",
+        "What would an effective counter-narrative look like?"
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Group activity: building a counter-narrative",
+      "minutes": 25,
+      "activity": {
+        "intro": "Small groups each get one harmful narrative, headline, comment, post or scenario, and build a short counter-narrative in five steps.",
+        "steps": [
+          { "title": "Identify the harmful narrative", "text": "What is being said? What message is being spread? Which emotion is activated?" },
+          { "title": "Name the harm", "text": "Who is being blamed, dehumanised, misrepresented or erased?" },
+          { "title": "Introduce facts and context", "text": "What information, research, social pattern or expert knowledge is missing?" },
+          { "title": "Reframe the focus", "text": "Shift responsibility back to perpetrators, systems or structures, not victims or marginalised groups." },
+          { "title": "Close with values", "text": "Dignity, equality, justice, safety, freedom, human rights or democratic responsibility." }
+        ],
+        "formats": ["Social media comment", "Instagram caption", "Short video script", "Poster headline", "Campaign slogan", "Carousel post"],
+        "note": "An effective counter-narrative is not an insult, a personal attack, whataboutism or sarcasm without substance. It is clear, fact-based, accessible and respectful of human dignity. Each group briefly presents its result."
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Reflection and closing",
+      "minutes": 10,
+      "prompts": [
+        "Why do harmful narratives spread so quickly online?",
+        "What makes a counter-narrative effective?",
+        "When can a response become harmful, even with good intentions?",
+        "How do we challenge harmful narratives without reproducing hate or misinformation?",
+        "What can young people do after this training, online and offline?"
+      ],
+      "keyMessage": "Everyone shares one key takeaway."
+    }
+  ],
+  "materials": [
+    { "name": "From Hate to Change: Counter-Narratives in Action", "form": "Presentation", "kind": "presentation" },
+    { "name": "Examples of harmful narratives, headlines, posts or comments", "form": "Digital examples", "kind": "case" },
+    { "name": "Counter-narrative analysis and building template", "form": "Worksheet", "kind": "worksheet" },
+    { "name": "Laptop, projector and internet connection", "form": "Technical equipment", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "A combination of discussion, group work and short reflection."
+  ]
+}

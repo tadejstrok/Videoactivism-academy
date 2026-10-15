@@ -1,0 +1,146 @@
+---
+import { useTranslations, type Lang } from '../i18n/ui';
+import { md, pad, type Step } from '../lib/modules';
+
+interface Props { step: Step; index: number; lang: Lang }
+const { step: s, index, lang } = Astro.props;
+const t = useTranslations(lang);
+---
+<article class="step paper" id={`step-${index + 1}`} data-step={index}>
+  <header class="head">
+    <span class={`badge t-${s.type}`}>{pad(index + 1)}</span>
+    <div class="meta">
+      <span class="label">{t(`step.${s.type}`)}</span>
+      <span class="chip chip--yellow">{s.minutes} {t('module.min')}</span>
+    </div>
+    <h3 class="h3 title">{s.title}</h3>
+  </header>
+
+  {s.body?.map((p) => <p set:html={md(p)} />)}
+
+  {s.bullets && <ul class="bullets">{s.bullets.map((b) => <li set:html={md(b)} />)}</ul>}
+
+  {s.formats && (
+    <ul class="formats">
+      {s.formats.map((f, i) => (
+        <li><span class="fnum">{i + 1}</span><strong>{f.name}</strong><span>{f.text}</span></li>
+      ))}
+    </ul>
+  )}
+
+  {s.callout && (
+    <div class="callout">
+      <p class="callout-title">{s.callout.title}</p>
+      <ul class="arrow-list">{s.callout.items.map((x) => <li>{x}</li>)}</ul>
+    </div>
+  )}
+
+  {s.specs && (
+    <div class="specs">
+      <p class="label">{t('module.specs')}</p>
+      <dl>{s.specs.map((x) => <div><dt>{x.name}</dt><dd>{x.text}</dd></div>)}</dl>
+    </div>
+  )}
+
+  {s.warnings && (
+    <div class="warn">
+      <p class="label">⚠ {t('module.warnings')}</p>
+      <ul>{s.warnings.map((w) => <li set:html={md(w)} />)}</ul>
+    </div>
+  )}
+
+  {s.prompts && (
+    <div class="ask">
+      <p class="label">{t('module.ask')}</p>
+      <ul>{s.prompts.map((q, i) => <li class={i % 2 ? 'r' : ''}>{q}</li>)}</ul>
+    </div>
+  )}
+
+  {s.activity && (
+    <div class="activity">
+      <p class="label">{t('module.activity')}</p>
+      {s.activity.intro && <p class="act-intro">{s.activity.intro}</p>}
+      <ol>
+        {s.activity.steps.map((a) => <li><strong>{a.title}</strong><span>{a.text}</span></li>)}
+      </ol>
+      {s.activity.formats && (
+        <div class="outs">
+          <p class="label">{t('module.formats')}</p>
+          <div class="chips">{s.activity.formats.map((f) => <span class="chip">{f}</span>)}</div>
+        </div>
+      )}
+      {s.activity.note && <p class="note">{s.activity.note}</p>}
+    </div>
+  )}
+
+  {s.keyMessage && (
+    <div class="key">
+      <p class="label">{t('module.key')}</p>
+      <p><mark>{s.keyMessage}</mark></p>
+    </div>
+  )}
+</article>
+
+<style>
+  .step { display: grid; gap: 18px; }
+  .head { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; align-items: center; }
+  .badge {
+    grid-row: span 2; width: 64px; height: 64px; display: grid; place-items: center;
+    font-weight: 900; font-size: 28px; border: var(--border); border-radius: 50%;
+  }
+  .meta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .meta .chip { padding: 5px 10px; font-size: 13px; }
+  .title { align-self: start; }
+
+  .bullets { padding-left: 1.2em; display: grid; gap: 8px; }
+  .bullets li::marker { color: var(--blue); }
+
+  .formats { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .formats li { border: var(--border); padding: 14px 16px; display: grid; gap: 4px; font-size: 16px; line-height: 1.45; position: relative; }
+  .formats strong { font-size: 18px; }
+  .fnum { position: absolute; top: -12px; right: 12px; background: var(--blue); color: #fff; font-weight: 900; font-size: 14px; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; border: var(--border); }
+  @media (max-width: 600px) { .formats { grid-template-columns: 1fr; } }
+
+  .callout { background: var(--blue); color: #fff; padding: 20px 22px; border: var(--border); }
+  .callout-title { font-weight: 900; font-size: 20px; margin-bottom: 12px; }
+  .callout .arrow-list { gap: 8px; }
+  .callout .arrow-list li { grid-template-columns: 34px 1fr; }
+  .callout .arrow-list li::before { width: 34px; height: 17px; }
+
+  .specs dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 8px 0 0; }
+  .specs dl div { border: var(--border); padding: 12px; }
+  .specs dt { font-weight: 800; }
+  .specs dd { margin: 0; font-size: 15px; color: var(--muted); }
+  @media (max-width: 600px) { .specs dl { grid-template-columns: 1fr; } }
+
+  .warn { background: #fff1ef; border: 2px solid var(--coral); padding: 16px 18px; }
+  .warn .label { color: #c0262a; margin-bottom: 8px; }
+  .warn ul { padding-left: 1.2em; display: grid; gap: 6px; font-size: 16px; }
+
+  /* Speech-bubble prompts */
+  .ask .label { margin-bottom: 12px; }
+  .ask ul { list-style: none; display: grid; gap: 10px; }
+  .ask li {
+    position: relative; max-width: 88%; padding: 12px 16px; font-weight: 600; line-height: 1.4;
+    background: var(--lime); border: var(--border); border-radius: 22px 22px 22px 6px;
+  }
+  .ask li.r { justify-self: end; background: #e6fbe9; border-radius: 22px 22px 6px 22px; }
+
+  .activity { background: var(--yellow); border: var(--border); box-shadow: var(--shadow-sm); padding: 22px; display: grid; gap: 14px; }
+  .act-intro { font-weight: 600; }
+  .activity ol { list-style: none; counter-reset: a; display: grid; gap: 10px; }
+  .activity ol li {
+    counter-increment: a; display: grid; grid-template-columns: 38px 1fr; column-gap: 12px;
+    background: var(--paper); border: var(--border); padding: 12px 14px; line-height: 1.4;
+  }
+  .activity ol li::before {
+    content: counter(a); grid-row: span 2; width: 34px; height: 34px; border-radius: 50%;
+    background: var(--ink); color: var(--lime); display: grid; place-items: center; font-weight: 900;
+  }
+  .activity ol span { font-size: 16px; color: var(--muted); }
+  .outs .label { margin-bottom: 8px; }
+  .note { font-size: 16px; border-top: 2px dashed var(--ink); padding-top: 12px; }
+
+  .key .label { margin-bottom: 6px; }
+  .key p:last-child { font-size: 21px; font-weight: 700; line-height: 1.4; }
+</style>

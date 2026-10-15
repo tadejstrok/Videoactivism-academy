@@ -1,0 +1,48 @@
+---
+import Barber from './Barber.astro';
+import Arrow from './Arrow.astro';
+import { localePath, type Lang } from '../i18n/ui';
+import { site, contactUrl } from '../i18n/site';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const c = site[lang].interested;
+const hrefs = [localePath(lang, 'modules'), contactUrl];
+---
+<section class="section section--ink interested" id="interested">
+  <div class="wrap">
+    <div class="section-head">
+      <Barber class="h2" text={c.title} />
+      <p class="lead">{c.lead}</p>
+    </div>
+    <ol class="options">
+      {c.options.map((o, i) => (
+        <li class={`opt card o${i + 1}`}>
+          <span class="n" aria-hidden="true">{i === 0 ? 'A' : 'B'}</span>
+          <h3 class="h3">{o.title}</h3>
+          <p>{o.text}</p>
+          <a class={`btn ${i === 0 ? 'btn--ghost' : ''}`} href={hrefs[i]}>{o.button} <Arrow /></a>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .options { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .opt { position: relative; color: var(--ink); padding: clamp(28px, 4vw, 44px); display: grid; gap: 16px; align-content: start; justify-items: start; box-shadow: 8px 8px 0 var(--lime); }
+  .o1 { background: var(--paper); transform: rotate(-0.8deg); }
+  .o2 { background: var(--blob-warm); transform: rotate(0.8deg); }
+  .h3 { font-size: clamp(24px, 2.6vw, 32px); }
+  .opt p { font-size: 18px; flex: 1; }
+  .opt .btn { margin-top: 8px; border-color: var(--ink); box-shadow: var(--shadow-sm); }
+  .n {
+    position: absolute; top: -22px; right: 24px; width: 48px; height: 48px; border-radius: 50%;
+    display: grid; place-items: center; background: var(--ink); color: var(--lime);
+    border: 2px solid var(--lime); font-weight: 900; font-size: 22px;
+  }
+  @media (max-width: 800px) {
+    .options { grid-template-columns: 1fr; }
+    .o1, .o2 { transform: none; }
+  }
+</style>

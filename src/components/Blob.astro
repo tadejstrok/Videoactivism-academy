@@ -1,0 +1,36 @@
+---
+// Lopsided speech-bubble with a gradient fill and an optional coral back layer.
+interface Props {
+  variant?: 'green' | 'warm' | 'paper';
+  back?: boolean;
+  class?: string;
+}
+const { variant = 'green', back = true, class: cls = '' } = Astro.props;
+const id = `g${Math.random().toString(36).slice(2, 8)}`;
+const path = 'M30 318 C 18 140, 290 30, 560 42 C 830 54, 992 170, 974 318 C 956 470, 752 574, 474 562 C 200 550, 42 478, 30 318 Z';
+---
+<div class={`blob blob--${variant} ${cls}`}>
+  <svg class="blob__shape" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id={id} x1="0" y1="0" x2="0" y2="1">
+        {variant === 'warm'
+          ? <><stop offset="0" stop-color="#EAF665" /><stop offset="1" stop-color="#FF8A6A" /></>
+          : variant === 'paper'
+            ? <><stop offset="0" stop-color="#FFFFFF" /><stop offset="1" stop-color="#FFFFFF" /></>
+            : <><stop offset="0" stop-color="#EAF665" /><stop offset="1" stop-color="#94EE69" /></>}
+      </linearGradient>
+    </defs>
+    {back && <path d={path} fill="#FF5556" transform="translate(26 30) rotate(2 500 300)" />}
+    <path d={path} fill={`url(#${id})`} />
+  </svg>
+  <div class="blob__content"><slot /></div>
+</div>
+
+<style>
+  .blob { position: relative; isolation: isolate; }
+  .blob__shape { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; overflow: visible; animation: breathe 7s ease-in-out infinite; }
+  .blob__content { position: relative; padding: clamp(56px, 9%, 96px) clamp(36px, 12%, 140px); }
+  @media (max-width: 640px) {
+    .blob__content { padding: 64px 32px; }
+  }
+</style>
