@@ -3,7 +3,7 @@ import Barber from '../../components/Barber.astro';
 import Base from '../../layouts/Base.astro';
 import Blob from '../../components/Blob.astro';
 import Arrow from '../../components/Arrow.astro';
-import { langs, localePath, useTranslations, type Lang } from '../../i18n/ui';
+import { asset, langs, localePath, useTranslations, type Lang } from '../../i18n/ui';
 import { site } from '../../i18n/site';
 
 export function getStaticPaths() {
@@ -15,7 +15,7 @@ const a = site[lang].about;
 ---
 <Base lang={lang} path="about" title={a.title} description={a.lead}>
   <section class="section">
-    <img class="figure fig" src="/cia-graphic-1.png" alt="" width="432" height="511" />
+    <img class="figure fig" src={asset('cia-graphic-1.png')} alt="" width="432" height="511" />
     <div class="wrap">
       <div class="section-head">
         <Barber as="h1" class="h1" text={a.title} />
@@ -25,7 +25,7 @@ const a = site[lang].about;
       <ul class="partners">
         {a.partners.map((p) => (
           <li class="card">
-            <img src={`/${p.logo}`} alt="" width="111" height="38" />
+            <img src={asset(p.logo)} alt="" width="111" height="38" />
             <div>
               <h2 class="h3">{p.name}</h2>
               <span class="label">{p.country}</span>

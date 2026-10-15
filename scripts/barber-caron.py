@@ -14,8 +14,8 @@ from fontTools.pens.reverseContourPen import ReverseContourPen
 from fontTools.pens.t2CharStringPen import T2CharStringPen
 from fontTools import subset
 
-src = Path(sys.argv[1])  # public/fonts
-out = Path(sys.argv[2])  # public/fonts/web
+src = Path(sys.argv[1])  # fonts-src
+out = Path(sys.argv[2])  # src/assets/fonts
 LAYERS = ['Fill', 'Outline', 'Shadow', 'Right']
 TARGETS = {'C': ('Ccaron', 0x10C, 0x10D), 'S': ('Scaron', 0x160, 0x161), 'Z': ('Zcaron', 0x17D, 0x17E)}
 EXTRUDE = (150, -120)  # Shadow offset measured from E vs fill

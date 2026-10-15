@@ -3,7 +3,7 @@ import Barber from '../../components/Barber.astro';
 import Base from '../../layouts/Base.astro';
 import Blob from '../../components/Blob.astro';
 import Arrow from '../../components/Arrow.astro';
-import { langs, localePath, useTranslations, type Lang } from '../../i18n/ui';
+import { asset, langs, localePath, useTranslations, type Lang } from '../../i18n/ui';
 import { site } from '../../i18n/site';
 import Interested from '../../components/Interested.astro';
 
@@ -17,7 +17,7 @@ const p = c.program;
 ---
 <Base lang={lang} path="program" title={p.title} description={p.lead}>
   <section class="intro">
-    <img class="figure fig" src="/cia-graphic-2.png" alt="" width="419" height="652" />
+    <img class="figure fig" src={asset('cia-graphic-2.png')} alt="" width="419" height="652" />
     <div class="wrap">
       <Barber as="h1" class="h1" text={p.title} />
       <Blob class="lead-blob">

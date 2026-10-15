@@ -1,17 +1,17 @@
 /* ---------- Fonts ---------- */
-@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Regular.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Italic.woff') format('woff'); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Medium.woff') format('woff'); font-weight: 500; font-display: swap; }
-@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Semibold.woff') format('woff'); font-weight: 600; font-display: swap; }
-@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Bold.woff') format('woff'); font-weight: 700; font-display: swap; }
-@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Extrabold.woff') format('woff'); font-weight: 800; font-display: swap; }
-@font-face { font-family: 'Switzer'; src: url('/fonts/web/Switzer-Black.woff') format('woff'); font-weight: 900; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('../assets/fonts/Switzer-Regular.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('../assets/fonts/Switzer-Italic.woff') format('woff'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('../assets/fonts/Switzer-Medium.woff') format('woff'); font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('../assets/fonts/Switzer-Semibold.woff') format('woff'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('../assets/fonts/Switzer-Bold.woff') format('woff'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('../assets/fonts/Switzer-Extrabold.woff') format('woff'); font-weight: 800; font-display: swap; }
+@font-face { font-family: 'Switzer'; src: url('../assets/fonts/Switzer-Black.woff') format('woff'); font-weight: 900; font-display: swap; }
 
 /* Barber: layered display face (caps only). Č Š Ž were added to the web files. */
-@font-face { font-family: 'Barber Fill'; src: url('/fonts/web/Barber-Fill.woff') format('woff'); font-display: block; }
-@font-face { font-family: 'Barber Outline'; src: url('/fonts/web/Barber-Outline.woff') format('woff'); font-display: block; }
-@font-face { font-family: 'Barber Shadow'; src: url('/fonts/web/Barber-Shadow.woff') format('woff'); font-display: block; }
-@font-face { font-family: 'Barber Right'; src: url('/fonts/web/Barber-Right.woff') format('woff'); font-display: block; }
+@font-face { font-family: 'Barber Fill'; src: url('../assets/fonts/Barber-Fill.woff') format('woff'); font-display: block; }
+@font-face { font-family: 'Barber Outline'; src: url('../assets/fonts/Barber-Outline.woff') format('woff'); font-display: block; }
+@font-face { font-family: 'Barber Shadow'; src: url('../assets/fonts/Barber-Shadow.woff') format('woff'); font-display: block; }
+@font-face { font-family: 'Barber Right'; src: url('../assets/fonts/Barber-Right.woff') format('woff'); font-display: block; }
 
 /* ---------- Tokens ---------- */
 :root {
@@ -170,7 +170,7 @@ mark, .hl {
 .arrow-list li { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; }
 .arrow-list li::before {
   content: ''; width: 44px; height: 22px; margin-top: 0.25em;
-  background: url('/arrow.png') center / contain no-repeat;
+  background: url('../assets/arrow.png') center / contain no-repeat;
 }
 .on-green .arrow-list li::before { filter: brightness(0); }
 

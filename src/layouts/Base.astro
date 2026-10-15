@@ -1,8 +1,13 @@
 ---
 import '../styles/global.css';
+import barberFill from '../assets/fonts/Barber-Fill.woff?url';
+import barberShadow from '../assets/fonts/Barber-Shadow.woff?url';
+import barberRight from '../assets/fonts/Barber-Right.woff?url';
+import barberOutline from '../assets/fonts/Barber-Outline.woff?url';
+import switzerRegular from '../assets/fonts/Switzer-Regular.woff?url';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { langs, localePath, useTranslations, type Lang } from '../i18n/ui';
+import { asset, langs, localePath, useTranslations, type Lang } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
@@ -26,12 +31,12 @@ const desc = description ?? t('site.description');
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={desc} />
     <meta name="theme-color" content="#54E86D" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="preload" href="/fonts/web/Barber-Fill.woff" as="font" type="font/woff" crossorigin />
-    <link rel="preload" href="/fonts/web/Barber-Shadow.woff" as="font" type="font/woff" crossorigin />
-    <link rel="preload" href="/fonts/web/Barber-Right.woff" as="font" type="font/woff" crossorigin />
-    <link rel="preload" href="/fonts/web/Barber-Outline.woff" as="font" type="font/woff" crossorigin />
-    <link rel="preload" href="/fonts/web/Switzer-Regular.woff" as="font" type="font/woff" crossorigin />
+    <link rel="icon" href={asset('favicon.svg')} type="image/svg+xml" />
+    <link rel="preload" href={barberFill} as="font" type="font/woff" crossorigin />
+    <link rel="preload" href={barberShadow} as="font" type="font/woff" crossorigin />
+    <link rel="preload" href={barberRight} as="font" type="font/woff" crossorigin />
+    <link rel="preload" href={barberOutline} as="font" type="font/woff" crossorigin />
+    <link rel="preload" href={switzerRegular} as="font" type="font/woff" crossorigin />
     {langs.map((l) => <link rel="alternate" hreflang={l} href={localePath(l, path)} />)}
     <link rel="alternate" hreflang="x-default" href={localePath('en', path)} />
   </head>

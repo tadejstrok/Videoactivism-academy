@@ -1,5 +1,6 @@
 ---
-import { langs, defaultLang } from '../i18n/ui';
+import { asset, langs, defaultLang, localePath } from '../i18n/ui';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <!doctype html>
 <html lang="en">
@@ -7,19 +8,19 @@ import { langs, defaultLang } from '../i18n/ui';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Videoactivism Academy</title>
-    <meta http-equiv="refresh" content={`1; url=/${defaultLang}/`} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <script is:inline define:vars={{ langs, defaultLang }}>
+    <meta http-equiv="refresh" content={`1; url=${localePath(defaultLang)}`} />
+    <link rel="icon" href={asset('favicon.svg')} type="image/svg+xml" />
+    <script is:inline define:vars={{ langs, defaultLang, base }}>
       let pick = defaultLang;
       try {
         const saved = localStorage.getItem('lang');
         const nav = (navigator.languages || [navigator.language]).map((l) => l.slice(0, 2).toLowerCase());
         pick = langs.includes(saved) ? saved : nav.find((l) => langs.includes(l)) || defaultLang;
       } catch {}
-      location.replace(`/${pick}/`);
+      location.replace(`${base}/${pick}/`);
     </script>
   </head>
   <body style="background:#54E86D;font-family:system-ui;padding:24px">
-    <a href="/sl/">Slovenščina</a> · <a href="/hr/">Hrvatski</a> · <a href="/en/">English</a>
+    <a href={localePath('sl')}>Slovenščina</a> · <a href={localePath('hr')}>Hrvatski</a> · <a href={localePath('en')}>English</a>
   </body>
 </html>

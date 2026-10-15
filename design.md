@@ -69,7 +69,7 @@ Fonts:
 - **Barber** (the poster's wordmark face) for **headlines**. It is a *layered* font, caps only.
 - **Switzer** for everything else.
 
-Both are in `/public/fonts`, and web versions are in `/public/fonts/web`.
+The source files are in `/fonts-src` (not published). The trimmed web versions are in `/src/assets/fonts`, so the bundler hashes them and applies the deploy base path.
 
 | Role | Style | Size (desktop / mobile) |
 |---|---|---|
@@ -98,7 +98,7 @@ The halo is painted in the background color, which recreates the thin gap betwee
 
 Use Barber only for short headlines. It is wide (about 0.8em per letter), so long text belongs in Switzer.
 
-**Language note:** Slovenian and Croatian use č, š, ž, ć, đ. Switzer covers all of them. Barber has ć and đ but shipped **without č, š, ž**, so those were added to the web files in every layer: the caron is the font's own circumflex flipped upside down, with a matching extrusion. If the type foundry releases a version with these letters, regenerate `public/fonts/web/Barber-*.woff` (`python scripts/barber-caron.py public/fonts public/fonts/web`).
+**Language note:** Slovenian and Croatian use č, š, ž, ć, đ. Switzer covers all of them. Barber has ć and đ but shipped **without č, š, ž**, so those were added to the web files in every layer: the caron is the font's own circumflex flipped upside down, with a matching extrusion. If the type foundry releases a version with these letters, regenerate `src/assets/fonts/Barber-*.woff` (`python scripts/barber-caron.py fonts-src src/assets/fonts`).
 
 ### Shape, line, texture
 

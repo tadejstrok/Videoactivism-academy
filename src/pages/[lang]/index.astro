@@ -6,7 +6,7 @@ import Scribble from '../../components/Scribble.astro';
 import Arrow from '../../components/Arrow.astro';
 import ModuleCard from '../../components/ModuleCard.astro';
 import Interested from '../../components/Interested.astro';
-import { langs, localePath, useTranslations, type Lang } from '../../i18n/ui';
+import { asset, langs, localePath, useTranslations, type Lang } from '../../i18n/ui';
 import { site } from '../../i18n/site';
 import { getModules } from '../../lib/modules';
 
@@ -21,8 +21,8 @@ const modules = getModules(lang);
 <Base lang={lang}>
   <!-- Hero -->
   <section class="hero">
-    <img class="figure fig-left" src="/cia-graphic-1.png" alt="" width="432" height="511" />
-    <img class="figure fig-right" src="/cia-graphic-2.png" alt="" width="419" height="652" />
+    <img class="figure fig-left" src={asset('cia-graphic-1.png')} alt="" width="432" height="511" />
+    <img class="figure fig-right" src={asset('cia-graphic-2.png')} alt="" width="419" height="652" />
     <div class="wrap hero-inner">
       <h1 class="wordmark">
         <Barber as="span" class="w1" text="Videoactivism" />

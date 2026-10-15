@@ -169,6 +169,11 @@ export function useTranslations(lang: Lang) {
   return (key: UIKey) => ui[lang][key] ?? ui[defaultLang][key];
 }
 
+/** URL for a file in /public, respecting the deploy base path (e.g. GitHub Pages /repo/). */
+export function asset(path: string) {
+  return `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
+}
+
 export function localePath(lang: Lang, path = '') {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   const clean = path.replace(/^\/|\/$/g, '');
