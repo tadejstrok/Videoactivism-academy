@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: videoactivism-academy
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+    traefik.ingress.kubernetes.io/router.middlewares: traefik-redirect-to-https@kubernetescrd
+spec:
+  ingressClassName: traefik
+  tls:
+    # TODO: replace with the real hostname (keep in sync with SITE in scripts/build-and-push.sh)
+    - hosts:
+        - videoaktivizem.danesjenovdan.si
+      secretName: videoactivism-academy-tls
+  rules:
+    - host: videoaktivizem.danesjenovdan.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: videoactivism-academy
+                port:
+                  number: 80

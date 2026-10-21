@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: videoaktivizem
+resources:
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
+images:
+  - name: videoactivism-academy
+    newName: rg.fr-par.scw.cloud/djnd/videoactivism-academy
+    newTag: 'd7d7029c0b229ef99cf69372705f5e0762988b22-dirty-20261021112109'

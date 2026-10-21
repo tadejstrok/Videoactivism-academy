@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: videoactivism-academy
+  labels:
+    app: videoactivism-academy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: videoactivism-academy
+  template:
+    metadata:
+      labels:
+        app: videoactivism-academy
+    spec:
+      containers:
+        - name: videoactivism-academy
+          image: videoactivism-academy
+          ports:
+            - containerPort: 80

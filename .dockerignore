@@ -1,0 +1,11 @@
+.git
+.github
+.claude
+.astro
+node_modules
+dist
+kustomize
+fonts-src
+*.pdf
+Dockerfile*
+docker-compose*.yaml
