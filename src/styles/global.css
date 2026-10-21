@@ -90,7 +90,8 @@ ul, ol { margin: 0; padding: 0; }
   --b-gap: var(--green);
   display: grid;
   font-weight: 400;
-  line-height: 1.08; /* font metrics are trimmed to cap height + extrusion */
+  /* Caps are ~0.57em + ~0.08em extrusion; 0.9 keeps wrapped lines tight but leaves room for carons (Č Š Ž). */
+  line-height: 0.9;
   letter-spacing: 0;
   text-transform: uppercase;
   overflow-wrap: break-word;

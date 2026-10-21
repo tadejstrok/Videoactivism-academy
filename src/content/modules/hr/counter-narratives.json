@@ -1,0 +1,143 @@
+{
+  "slug": "counter-narratives",
+  "number": 2,
+  "color": "coral",
+  "title": "Od štetnih narativa do kontranarativa",
+  "summary": "Prepoznaj štetne priče koje oblikuju javno mnijenje i nauči na njih odgovoriti činjenicama, kontekstom i dostojanstvom umjesto uvredama.",
+  "topics": ["Narativi", "Emocionalni okidači", "Kontranarativ u 5 koraka"],
+  "description": [
+    "Radionica sudionike/ce uvodi u pojam narativa i kontranarativa kao alata za razumijevanje, propitivanje i transformiranje štetnih poruka u medijima, politici i digitalnoj komunikaciji. Istražuje kako dominantni narativi oblikuju javnu percepciju društvenih pitanja, kako mogu opravdavati diskriminaciju, nasilje ili isključivanje te kako se kontranarativi mogu koristiti za vraćanje dostojanstva, pružanje konteksta i promicanje ljudskih prava.",
+    "Kroz raspravu, primjere i grupni rad sudionici/ce analiziraju kako se štetni narativi pojavljuju u medijskim naslovima, objavama na društvenim mrežama, komentarima i javnom diskursu. Uče prepoznavati emocionalne okidače poput straha, ljutnje, gađenja, poniženja, prijetnje statusu i nepovjerenja te načine na koje se te emocije koriste za manipuliranje publikom ili poticanje neprijateljstva prema marginaliziranim skupinama.",
+    "Radionica je usmjerena i na praktične strategije za stvaranje učinkovitih kontranarativa. Sudionici/ce uče kako razotkriti manipulaciju, uvesti činjenice i kontekst, promijeniti perspektivu, zaštititi dostojanstvo žrtava i marginaliziranih skupina te preusmjeriti razgovor prema ljudskim pravima, jednakosti i društvenoj odgovornosti.",
+    "Radionica koristi primjere povezane sa seksizmom, rodno uvjetovanim nasiljem, rasizmom, homofobijom, transfobijom i ekstremizmom. Može se prilagoditi nacionalnom kontekstu korištenjem lokalno relevantnih primjera štetnog medijskog izvještavanja, diskriminatornog javnog diskursa, online govora mržnje ili aktivističkih kampanja kontranarativa."
+  ],
+  "duration": 90,
+  "objectives": [
+    "Razumjeti razliku između narativa i kontranarativa",
+    "Prepoznati emocionalne okidače koji se koriste u štetnim narativima, poput straha, ljutnje, gađenja, poniženja i nepovjerenja",
+    "Analizirati kako kontranarativi mogu razotkriti manipulaciju, pružiti činjenice, promijeniti perspektivu i braniti ljudska prava",
+    "Razlikovati učinkovit kontranarativ od uvrede, osobnog napada, skretanja teme ili praznog sarkazma",
+    "Razviti osnovnu poruku kontranarativa kao odgovor na štetni narativ u medijima ili online komunikaciji"
+  ],
+  "targetGroup": [
+    "Radionica je namijenjena mladima koji sudjeluju u programu neformalnog obrazovanja usmjerenom na građanske, medijske i digitalne kompetencije. Posebno je relevantna za mlade koji su aktivni online, prate društvene i političke sadržaje, sudjeluju u komentarima ili raspravama na društvenim mrežama ili žele koristiti digitalnu komunikaciju za društvene promjene.",
+    "Radionica se može prilagoditi i školskim razredima, grupama mladih, studentskim organizacijama, mladim aktivistima/cama ili sudionicima/ama s manje prethodnog iskustva u analizi medija i stvaranju sadržaja."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Objasniti razliku između narativa i kontranarativa",
+      "content": "Narativi kao priče koje oblikuju način na koji društvo razumije probleme, žrtve, odgovornost i rješenja; kontranarativi kao namjerno oblikovane poruke koje osporavaju štetne dominantne narative",
+      "methods": "Kratko izlaganje; vođena rasprava; analiza primjera",
+      "evaluation": "Usmena refleksija; pitanja facilitatora/ice"
+    },
+    {
+      "outcome": "Prepoznati štetne narative i emocije koje aktiviraju",
+      "content": "Strah, ljutnja, gađenje, poniženje, prijetnja statusu, gubitak kontrole, teorije zavjere i nepovjerenje; način na koji emocionalni okidači smanjuju kritičko promišljanje i mobiliziraju neprijateljstvo",
+      "methods": "Prezentacija; analiza primjera; rad u paru",
+      "evaluation": "Grupna rasprava; dovršen zadatak analize"
+    },
+    {
+      "outcome": "Analizirati elemente učinkovitog kontranarativa",
+      "content": "Razotkrivanje manipulacije; pružanje činjenica; promjena perspektive; vraćanje dostojanstva; preoblikovanje prema ljudskim pravima, jednakosti i odgovornosti",
+      "methods": "Radionica; rad u malim grupama; analiza studije slučaja",
+      "evaluation": "Grupna prezentacija; vršnjačke povratne informacije"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "Koje priče oblikuju našu stvarnost?",
+      "minutes": 10,
+      "body": [
+        "Facilitator/ica otvara radionicu kratkim predstavljanjem Centra za građanske inicijative Poreč, feminističke, ljudskopravaške, mirovne i neprofitne organizacije civilnog društva koja se vodi načelima slobode, jednakosti i nediskriminacije te od 1992. štiti i promiče ljudska prava i aktivno građanstvo. Nakon toga vodi kratku raspravu koja započinje pitanjima:"
+      ],
+      "prompts": [
+        "Gdje se svakodnevno susrećemo s društvenim i političkim „pričama“?",
+        "Mogu li medijski naslovi, objave ili komentari na društvenim mrežama utjecati na to kako razumijemo određene skupine ljudi?",
+        "Može li neka priča učiniti da netko izgleda kriv, opasan, nevidljiv ili manje vrijedan empatije?",
+        "Jeste li ikad vidjeli objavu ili komentar koji je osporio štetan stereotip ili lažnu tvrdnju?"
+      ],
+      "keyMessage": "Narativi nisu neutralni. Oni oblikuju ono što društvo vidi kao problem, koga se okrivljuje, koga se prepoznaje kao žrtvu i što se smatra mogućim rješenjem."
+    },
+    {
+      "type": "input",
+      "title": "Što je kontranarativ?",
+      "minutes": 20,
+      "bullets": [
+        "Narativi kao dominantne priče koje oblikuju javno razumijevanje",
+        "Štetni narativi koji opravdavaju diskriminaciju, nasilje ili isključivanje",
+        "Kontranarativi kao namjerno oblikovane poruke koje osporavaju ili preokreću štetne narative",
+        "Razlika između kontranarativa i običnog suprotnog mišljenja",
+        "Društvena i obrazovna funkcija kontranarativa",
+        "Primjeri kontranarativa u komentarima, objavama na društvenim mrežama, vizualima, kampanjama, javnim izjavama, medijskim analizama i zagovaranju"
+      ],
+      "callout": {
+        "title": "Kontranarativ može…",
+        "items": [
+          "razotkriti manipulaciju",
+          "pružiti činjenice i kontekst",
+          "promijeniti perspektivu",
+          "braniti dostojanstvo i prava marginaliziranih skupina",
+          "preoblikovati temu oko pravde, jednakosti i odgovornosti"
+        ]
+      },
+      "keyMessage": "Kontranarativi su važni jer narativi oblikuju stvarnost. Ako štetni narativi ostanu nepropitani, mogu se normalizirati."
+    },
+    {
+      "type": "case",
+      "title": "Studija slučaja „Seksizam naš svagdašnji“: od štetnog medijskog izvještavanja do kontranarativa",
+      "minutes": 25,
+      "body": [
+        "Sudionici/ce analiziraju primjer štetnog medijskog izvještavanja ili online komunikacije. Primjer se može odnositi na rodno uvjetovano nasilje, seksizam, rasizam, homofobiju, transfobiju, migracije, ekstremizam ili drugo pitanje relevantno za nacionalni kontekst.",
+        "Facilitator/ica potiče sudionike/ce da primijete ne samo ono što je izrečeno, nego i ono što je izostavljeno. Primjerice, štetno izvještavanje može se usredotočiti na tračeve, privatne detalje ili emocije počinitelja, a pritom zanemariti strukturno nasilje, institucionalnu odgovornost, dostojanstvo žrtve ili dostupnu podršku."
+      ],
+      "prompts": [
+        "Koji je dominantni narativ u ovom primjeru?",
+        "Koga se okrivljuje, briše, dehumanizira ili pogrešno predstavlja?",
+        "Koji se emocionalni okidač koristi? Oslanja li se poruka na strah, ljutnju, gađenje, poniženje ili nepovjerenje?",
+        "Koje činjenice ili kontekst nedostaju?",
+        "Kako bi se poruka mogla preoblikovati na način koji štiti dostojanstvo i ljudska prava?",
+        "Kako bi izgledao učinkovit kontranarativ?"
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Grupna aktivnost: Izgradnja kontranarativa",
+      "minutes": 25,
+      "activity": {
+        "intro": "Sudionici/ce rade u malim grupama. Svaka grupa dobiva jedan štetan narativ, naslov, komentar, objavu ili scenarij. Zadatak je razviti kratak kontranarativ kroz pet koraka.",
+        "steps": [
+          { "title": "Prepoznaj štetan narativ", "text": "Što se govori? Koja se poruka širi? Koja se emocija aktivira?" },
+          { "title": "Imenuj štetu", "text": "Koga se okrivljuje, dehumanizira, pogrešno predstavlja ili briše?" },
+          { "title": "Uvedi činjenice i kontekst", "text": "Koje informacije, istraživanja, društveni obrasci ili stručno znanje nedostaju?" },
+          { "title": "Preoblikuj fokus", "text": "Kako se odgovornost može vratiti na počinitelje, sustave ili strukture umjesto okrivljavanja žrtava ili marginaliziranih skupina?" },
+          { "title": "Zaključi vrijednostima", "text": "Koje vrijednosti trebaju voditi odgovor: dostojanstvo, jednakost, pravda, sigurnost, sloboda, ljudska prava ili demokratska odgovornost?" }
+        ],
+        "formats": ["Komentar na društvenim mrežama", "Instagram opis", "Kratki video scenarij", "Naslov za plakat", "Slogan kampanje", "Koncept carousel objave"],
+        "note": "Učinkovit kontranarativ nije uvreda, osobni napad, „whataboutism“ ni sarkazam bez sadržaja. Treba biti jasan, utemeljen na činjenicama, pristupačan i poštovati ljudsko dostojanstvo. Svaka grupa ukratko predstavlja svoj kontranarativ."
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Refleksija i zatvaranje",
+      "minutes": 10,
+      "prompts": [
+        "Zašto se štetni narativi često tako brzo šire online?",
+        "Što kontranarativ čini učinkovitim?",
+        "Kada odgovor može postati štetan čak i ako je namjera dobra?",
+        "Kako možemo osporavati štetne narative bez reprodukcije mržnje ili dezinformacija?",
+        "Što mladi mogu učiniti nakon ove edukacije – online i offline?"
+      ],
+      "keyMessage": "Sudionici/ce dijele jedan ključni zaključak koji nose s radionice."
+    }
+  ],
+  "materials": [
+    { "name": "Od mržnje do promjene – kontranarativi na djelu", "form": "Prezentacija", "kind": "presentation" },
+    { "name": "Primjeri štetnih narativa, naslova, objava ili komentara", "form": "Digitalni primjeri", "kind": "case" },
+    { "name": "Radni list za analizu kontranarativa i predložak za izradu kontranarativa", "form": "Radni list", "kind": "worksheet" },
+    { "name": "Laptop, projektor i internetska veza", "form": "Tehnička oprema", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "Evaluacija se provodi kombinacijom rasprave, grupnog rada i kratke refleksije."
+  ]
+}

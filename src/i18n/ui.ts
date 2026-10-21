@@ -114,15 +114,15 @@ const sl: Record<UIKey, string> = {
 
 const hr: Record<UIKey, string> = {
   'site.name': 'Akademija videoaktivizma',
-  'site.description': 'Program neformalnog obrazovanja za mlade iz Hrvatske i Slovenije koji žele stvarati video protunarative protiv mržnje, polarizacije i dezinformacija.',
+  'site.description': 'Program neformalnog obrazovanja za mlade iz Hrvatske i Slovenije koji žele stvarati video kontranarative protiv mržnje, polarizacije i dezinformacija.',
   'nav.home': 'Početna',
   'nav.program': 'Program',
-  'nav.modules': 'Kurikul',
+  'nav.modules': 'Kurikulum',
   'nav.about': 'O nama',
   'nav.menu': 'Izbornik',
   'nav.lang': 'Jezik',
   'cta.program': 'Cijeli izvještaj o programu',
-  'cta.modules': 'Pregledaj kurikul',
+  'cta.modules': 'Pregledaj kurikulum',
   'cta.open': 'Otvori plan radionice',
   'module.number': 'Modul',
   'module.min': 'min',
@@ -138,8 +138,8 @@ const hr: Record<UIKey, string> = {
   'module.formats': 'Mogući rezultati',
   'module.specs': 'Specifikacije platformi',
   'module.warnings': 'Pazi',
-  'module.toolkit': 'Za voditelje',
-  'module.toolkitLead': 'Sve što trebaš da sam_a provedeš radionicu.',
+  'module.toolkit': 'Za voditelje/ice',
+  'module.toolkitLead': 'Sve što trebaš da sam/a provedeš radionicu.',
   'module.outcomes': 'Ishodi učenja',
   'module.content': 'Sadržaj',
   'module.methods': 'Metode',
@@ -150,7 +150,7 @@ const hr: Record<UIKey, string> = {
   'module.print': 'Ispiši za radionicu',
   'module.prev': 'Prethodni',
   'module.next': 'Sljedeći',
-  'module.all': 'Natrag na kurikul',
+  'module.all': 'Natrag na kurikulum',
   'module.untranslated': 'Ovaj plan radionice još nije preveden, pa čitaš englesku verziju.',
   'step.intro': 'Uvod',
   'step.input': 'Sadržaj',
@@ -160,7 +160,7 @@ const hr: Record<UIKey, string> = {
   'footer.partners': 'Organizatori',
   'footer.eu': 'Sufinancira Europska unija. Izneseni stavovi i mišljenja samo su autorovi i ne odražavaju nužno službena stajališta Europske unije ili Europske izvršne agencije za obrazovanje i kulturu (EACEA). Ni Europska unija ni tijelo koje dodjeljuje sredstva ne mogu se smatrati odgovornima za njih.',
   'footer.eulogo': 'Sufinancira Europska unija',
-  'footer.license': 'Kurikul i planovi radionica slobodno su dostupni za neformalno obrazovanje.',
+  'footer.license': 'Kurikulum i planovi radionica slobodno su dostupni za neformalno obrazovanje.',
 };
 
 export const ui: Record<Lang, Record<UIKey, string>> = { en, sl, hr };

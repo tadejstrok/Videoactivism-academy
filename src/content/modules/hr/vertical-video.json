@@ -1,0 +1,150 @@
+{
+  "slug": "vertical-video",
+  "number": 4,
+  "color": "peach",
+  "title": "Kratki vertikalni video za digitalni aktivizam",
+  "summary": "Šest formata, jedna struktura (Udica → Srž → Poziv na djelovanje) i pravila platformi koja trebaš da poruku pretvoriš u video pored kojeg ljudi neće proskrolati.",
+  "topics": ["6 videoformata", "Udica → Srž → CTA", "Platforme i shadowban"],
+  "description": [
+    "Ova radionica praktičan je vodič za korištenje kratkog vertikalnog videosadržaja u svrhu poticanja građanskog angažmana, političkog komentara i društvenog aktivizma. Objašnjava zašto je vertikalni video postao dominantan format digitalne komunikacije i kako prikaz preko cijelog zaslona stvara osjećaj neposrednosti, hitnosti i autentičnosti.",
+    "Sudionici/ce analiziraju široku tipologiju kratkih videoformata, od monoloških „rantova iz auta“ i dijaloga u kojima jedna osoba glumi više persona do satire, videoeseja i vox populi intervjua. Uče praktične strategije stvaranja sadržaja, uključujući „Lookout Mindset“ (stav stalnog praćenja prilika), trend-jacking (korištenje postojećih trendova), steelmanning protuargumenata (oblikovanje njihove najsnažnije verzije) te strukturiranje scenarija prema modelu Hook → Core → Call to Action, odnosno Udica → Srž → Poziv na djelovanje.",
+    "Radionica se bavi i psihološkim taktikama, poput korištenja memeova kao „trojanskih konja“ za uvođenje složenih ili radikalnih ideja, izgradnje persone i korištenja konfrontacije radi povećanja potencijala za dijeljenje sadržaja.",
+    "Na kraju sudionici/ce prolaze kroz tehničku logistiku, specifikacije platformi (TikTok, Instagram Reels, YouTube Shorts), dobre prakse objavljivanja, sigurnosna upozorenja i strategije za snalaženje s algoritamskom moderacijom ili shadowbanningom pri obradi osjetljivih političkih tema."
+  ],
+  "duration": 90,
+  "variants": [
+    { "minutes": 60, "text": "Usredotočiti se isključivo na tipologiju videoformata i strukturu Udica → Srž → Poziv na djelovanje; izostaviti praktičnu vježbu storyboarda." },
+    { "minutes": 120, "text": "Produžiti grupnu aktivnost u radionicu stvaranja sadržaja uživo u kojoj grupe mobilnim telefonima snimaju i montiraju sirovu verziju 60-sekundnog vertikalnog videa, nakon čega slijedi zajedničko gledanje." }
+  ],
+  "objectives": [
+    "Razumjeti glavne videoformate: procijeniti prednosti, nedostatke i produkcijske zahtjeve šest osnovnih vertikalnih formata (monološki rantovi, dijalozi, satira/skečevi, videoeseji, reaction videi i vox populi)",
+    "Primijeniti strateške tehnike stvaranja sadržaja: koristiti „Lookout Mindset“, integraciju trendova (npr. ikone pop kulture) i AI-podržani steelmanning za poboljšanje poruka",
+    "Ovladati psihološkim taktikama angažiranja: primijeniti okvir Udica → Srž → Poziv na djelovanje, koristiti humor kao „trojanskog konja“ za ozbiljne poruke, graditi prepoznatljive persone i jasno oblikovati suprotstavljene argumente",
+    "Snalaziti se u tehničkim specifikacijama i moderaciji: poštovati vremenska ograničenja platformi i pozicioniranje titlova/teksta, izbjegavati sigurnosne rizike (npr. snimanje tijekom vožnje) te razumjeti moguće algoritamske kazne povezane s osjetljivim temama (npr. rat, politički sukobi)"
+  ],
+  "targetGroup": [
+    "Mladi kreatori/ce sadržaja, digitalni/e aktivisti/ce, osobe zaposlene u organizacijama civilnog društva, studenti/ce komunikologije i građanski/e organizatori/ice koji društvene i političke poruke žele pretvoriti u viralne i angažirajuće kratke videoformate."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Razlikovati vertikalne videoformate i njihove strateške namjene",
+      "content": "Trendovi mobilne konzumacije; 6 videoformata (rantovi, dijalozi, satira, videoeseji, reaction, vox populi)",
+      "methods": "Vizualna prezentacija sa stvarnim primjerima s TikToka/Reelsa (npr. @danesjenovdan)",
+      "evaluation": "Kviz prepoznavanja formata; usmena participacija"
+    },
+    {
+      "outcome": "Primijeniti okvire za oblikovanje poruka i psihološke udice",
+      "content": "Model Udica → Srž → Poziv na djelovanje; taktika trojanskog konja; Wojak/prepoznatljivost; steelmanning argumenata; izgradnja persone",
+      "methods": "Vođena analiza scenarija; analiza viralnih političkih uvoda",
+      "evaluation": "Dovršena skica scenarija"
+    },
+    {
+      "outcome": "Primijeniti strateško korištenje trendova i otkrivanje tema",
+      "content": "„Lookout Mindset“; korištenje trendova (npr. Labubu, Breaking Bad); brainstorming uz pomoć AI-ja",
+      "methods": "Grupni brainstorming uz aktualne teme pop-kulture",
+      "evaluation": "Kvaliteta povezivanja tema i trendova u grupnom radu"
+    },
+    {
+      "outcome": "Primijeniti pravila platformi, taktike objavljivanja i moderacije",
+      "content": "Ograničenja platformi (TikTok, Instagram, Shorts); pozicioniranje titlova/teksta; sigurnosne zabrane; snalaženje sa shadowbanningom i moderacijom osjetljivih tema",
+      "methods": "Izlaganje; analiza uvjeta korištenja platformi i potencijalno potisnutih ključnih riječi",
+      "evaluation": "Kviz; završna provjera kontrolne liste"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "Vertikalna revolucija",
+      "minutes": 10,
+      "bullets": [
+        "**Mobilni kontekst:** facilitator/ica objašnjava prijelaz sa statičnih sadržaja na društvene mreže usmjerene na video te predstavlja podatak iz izvornog materijala da se više od 90% konzumacije sadržaja na društvenim mrežama odvija na mobilnim uređajima.",
+        "**Portretno nasuprot pejzažnom:** isticanje važnosti orijentacije uređaja kao moguće prepreke korisničkom iskustvu. Vizualna usporedba pokazuje kako vertikalni video zauzima cijeli zaslon i stvara dojam intimnosti, hitnosti i sirove autentičnosti.",
+        "**Poziv kreatorima/icama na djelovanje:** citat Roberta Johnsona „The world is run by those who show up.“ Naglasak je na važnosti dosljednog objavljivanja na TikToku, Instagramu i YouTube Shortsima."
+      ]
+    },
+    {
+      "type": "input",
+      "title": "Tipologija kratkih videoformata",
+      "minutes": 20,
+      "body": [
+        "Facilitator/ica predstavlja šest glavnih formata, njihove produkcijske zahtjeve i strateške prednosti:"
+      ],
+      "formats": [
+        { "name": "Monološki „rantovi“", "text": "Izravno obraćanje kameri (npr. „boomer car rants“). Visoka emocionalna autentičnost i brza produkcija, ali moguć zamor publike i zasićenje formatom." },
+        { "name": "Dijalozi", "text": "Jedan/a kreator/ica glumi dvije persone gledajući izvan kadra u različitim smjerovima. Pogodno za obradu čestih argumenata i protuargumenata na kontroliran i zabavan način." },
+        { "name": "Skečevi i satira", "text": "Visok viralni potencijal; humor se koristi za razgradnju predrasuda." },
+        { "name": "Videoeseji / explaineri", "text": "Format bez lica, s glasom izvan kadra preko B-rolla ili grafika. Omogućuje dublju obradu javnih politika bez pojavljivanja pred kamerom, ali zahtijeva intenzivnije pisanje scenarija." },
+        { "name": "Reaction", "text": "Oslanja se na provokaciju i dramu." },
+        { "name": "Vox populi", "text": "Ulični intervjui donose visoku autentičnost, ali kreator/ica ima manje kontrole nad završnim narativom." }
+      ]
+    },
+    {
+      "type": "input",
+      "title": "Strategija, psihologija i tehničke taktike",
+      "minutes": 25,
+      "bullets": [
+        "**„Lookout Mindset“ i trendovi:** kreatori/ce trebaju koristiti društveno osluškivanje – pratiti vijesti, komentare, pop-kulturu i online trendove kako bi uočili postojeću pažnju koju mogu strateški iskoristiti.",
+        "**Oblikovanje poruke:** uvesti „steelmanning“ – predviđanje i obradu najsnažnije verzije suprotnog argumenta, uključujući korištenje AI alata za testiranje protuargumenata.",
+        "**Trojanski konj:** kako humor i memeovi mogu zaobići obrambene reakcije publike i prenijeti političke ideje.",
+        "**Prepoznatljivost (Wojak / „Literally Me“):** pokazivanje stvarnih emocija, manje uglađen pristup i izravno obraćanje („ti“).",
+        "**Konfrontacija:** sadržaj s jasnim protivnikom dijeli se dvostruko češće; izravan i odvažan govor može graditi povjerenje."
+      ],
+      "callout": {
+        "title": "Svaki video: Udica → Srž → CTA",
+        "items": [
+          "Udica: prve 3 sekunde",
+          "Srž poruke",
+          "Poziv na djelovanje (CTA)"
+        ]
+      },
+      "specs": [
+        { "name": "TikTok", "text": "Fleksibilno" },
+        { "name": "Instagram Reels", "text": "Preporučeno do 3 minute" },
+        { "name": "YouTube Shorts", "text": "3 minute" }
+      ],
+      "warnings": [
+        "Udica treba biti prikazana tekstom na zaslonu u prve 1–3 sekunde; opisi trebaju djelovati kao teaser uz relevantne ključne riječi i hashtagove.",
+        "Nikada ne snimati tijekom vožnje automobila ili bicikla.",
+        "Kod tema rata, nasilja ili osjetljivih sukoba treba računati na mogućnost algoritamskog potiskivanja; „algospeak“ kao način prilagodbe jezika moderaciji."
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Grupna aktivnost: Pisanje scenarija za vertikalni aktivistički video",
+      "minutes": 20,
+      "activity": {
+        "intro": "Sudionici/ce rade u grupama od 3–4 osobe i izrađuju scenarij i storyboard za 60-sekundni vertikalni video o građanskom ili društvenom pitanju.",
+        "steps": [
+          { "title": "Odaberi format", "text": "Jedan format iz tipologije (npr. dijalog, satira ili explainer)." },
+          { "title": "Osmisli udicu od 3 sekunde", "text": "Vizualnu i verbalnu." },
+          { "title": "Uključi trojanskog konja", "text": "Trend, humor ili referencu na pop-kulturu." },
+          { "title": "Prepoznaj suprotni argument", "text": "Jasan suprotni argument i prikaz njegove najsnažnije verzije (steelmanning)." },
+          { "title": "Završi pozivom na djelovanje", "text": "Konkretan poziv na djelovanje." }
+        ],
+        "note": "Svaka grupa u 90 sekundi predstavlja koncept svojeg videa. Bi li vas prve tri sekunde zaustavile u skrolanju?"
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Refleksija i zatvaranje",
+      "minutes": 15,
+      "prompts": [
+        "Kako uravnotežiti korištenje provokacije ili konfrontacije s etičnom i istinitom komunikacijom?",
+        "Kako aktivisti/ce mogu govoriti o snažno moderiranim ili osjetljivim političkim temama bez rizika?"
+      ],
+      "keyMessage": "Facilitator/ica ponavlja tehničke stvari koje treba izbjegavati (loša kvaliteta zvuka, sigurnosni rizici, loše pozicioniranje teksta/titlova) te naglašava da je u ekosustavu kratkog videa dosljednost važnija od perfekcionizma."
+    }
+  ],
+  "materials": [
+    { "name": "Slajdovi o mobilnim trendovima, horizontalnom i vertikalnom prikazu, tipologiji videa, memeovima i ilustracijama (Wile E. Coyote, Trojan Horse, Wojak, Labubu)", "form": "Prezentacija", "kind": "presentation" },
+    { "name": "Preuzeti primjeri isječaka za svih 6 formata", "form": "Video studije slučaja", "kind": "case" },
+    { "name": "Predložak s poljima: odabir formata, udica od 3 sekunde, korištenje trenda, srž poruke / steelman i poziv na djelovanje", "form": "Radni list za scenarij", "kind": "worksheet" },
+    { "name": "Kartica s duljinama videa, sigurnim zonama za titlove/tekst i savjetima za optimizaciju ključnih riječi za TikTok, Instagram Reels i YouTube Shorts", "form": "Brzi vodič kroz specifikacije platformi", "kind": "worksheet" },
+    { "name": "Laptop, projektor, zvučnici i pametni telefoni sudionika/ca", "form": "Tehnička oprema", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "**Formativno:** vrednovanje se provodi tijekom predstavljanja tipologije tako da facilitator/ica traži od sudionika/ca da prepoznaju formate prikazanih primjera.",
+    "**Praktično:** primjena se procjenjuje kroz dovršene radne listove za scenarij, posebno pravilnu integraciju okvira Udica → Srž → Poziv na djelovanje i strategija „trojanskog konja“.",
+    "**Vršnjačka povratna informacija:** daje se tijekom grupnih predstavljanja, s naglaskom na to bi li prve tri sekunde predloženog videa uspjele zaustaviti korisnika/cu u skrolanju."
+  ]
+}

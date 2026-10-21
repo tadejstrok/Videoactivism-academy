@@ -1,0 +1,111 @@
+{
+  "slug": "political-contexts",
+  "number": 1,
+  "color": "blue",
+  "title": "Politički konteksti i digitalni ekosustavi",
+  "summary": "Kako algoritmi, memeovi i ekonomija pažnje oblikuju političku stvarnost te kako koristiti videoaktivizam, a da nas pritom ne izmanipuliraju.",
+  "topics": ["Ekonomija pažnje", "Memeovi kao trojanski konji", "Clicktivism"],
+  "description": [
+    "Ova radionica detaljno istražuje duboku transformaciju političkog, društvenog i građanskog života u doba digitalnih platformi. Razmatra kako je suvremeno društvo postalo „ekstremno online“, što pogađa sve generacije, te uvodi pojam „brain rot“ (Oxfordova riječ godine 2024.) za opis uma preopterećenog algoritamskim sadržajem.",
+    "Radionica prati razvoj digitalnih prostora od tekstualnih mreža 2010. do videom dominantnog okruženja 2025., tumačeći taj pomak kao povratak „usmenoj kulturi“ u kojoj su društveni videi nova mjesta pripovijedanja, svojevrsne digitalne logorske vatre.",
+    "Sudionici/ce kritički će razmotriti kako su fizičke političke prostore (poput prostora kulture mladih, društvenih centara i skvotova 1980-ih i 1990-ih) u velikoj mjeri zamijenili digitalni prostori poput Discorda, Twitcha, Reddita i Fortnitea.",
+    "Kroz analizu radionica se bavi rizicima „tehnofeudalizma“ (platforme koje djeluju poput suvremenih feudalnih posjeda) te „clicktivisma/slacktivisma“. Razotkriva skrivene mehanizme radikalizacije, pokazujući kako memeovi mogu djelovati kao „trojanski konji“ za ideologiju te kako se Overtonov prozor pomiče ironijom i „shitpostingom“.",
+    "Na kraju radionica dekonstruira algoritamsku „ekonomiju pažnje“ (povezanu s Facebookovim uvođenjem algoritamskog feeda 2009., koje se u izvornom materijalu metaforički naziva digitalnim „istočnim grijehom“ čovječanstva) te sudionike/ce upoznaje s psihološkim i tehničkim strategijama učinkovitog videoaktivizma."
+  ],
+  "duration": 90,
+  "objectives": [
+    "Prepoznati mehanizme „ekonomije pažnje“ i način na koji algoritmi oblikuju političku stvarnost",
+    "Analizirati kako humor i „shitposting“ mogu djelovati kao prijenosnici ideološke radikalizacije",
+    "Razumjeti prijelaz iz fizičkih u digitalne političke prostore (Discord, Twitch, TikTok itd.)",
+    "Procijeniti učinkovitost i rizike „clicktivisma“ u odnosu na konkretno političko djelovanje",
+    "Odgovorno primijeniti načela uspješnog videoaktivizma (pravilo 3 sekunde, metrike i emocionalne okidače)"
+  ],
+  "targetGroup": [
+    "Mladi zainteresirani za medijsku pismenost, digitalnu sociologiju i aktivizam, osobito oni aktivni u digitalnom prostoru koji žele razumjeti temeljne mehanizme sadržaja koji konzumiraju i stvaraju."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Objasniti utjecaj digitalne ekonomije pažnje",
+      "content": "Ekonomija pažnje; algoritmi kao „crne kutije“; uloga „brain rota“",
+      "methods": "Kratko predavanje; vizualna analiza feedova društvenih mreža",
+      "evaluation": "Rasprava u grupi; refleksija"
+    },
+    {
+      "outcome": "Prepoznati ideološke alate u digitalnim medijima",
+      "content": "Memeovi kao „trojanski konji“; shitposting; pomicanje Overtonova prozora",
+      "methods": "Vođena analiza studija slučaja (memeovi/videozapisi)",
+      "evaluation": "Radni list o ideološkim porukama"
+    },
+    {
+      "outcome": "Procijeniti strategije digitalnog aktivizma",
+      "content": "Clicktivism nasuprot stvarnom učinku; videoaktivizam; psihološki okidači",
+      "methods": "Studija slučaja uspješnih i neuspješnih digitalnih kampanja",
+      "evaluation": "Grupna prezentacija; vršnjačke povratne informacije"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "Digitalna svakodnevica",
+      "minutes": 10,
+      "bullets": [
+        "Rasprava o pojmu „brain rot“ i prijelazu iz tekstualnih u okruženja zasićena videom."
+      ],
+      "prompts": [
+        "Kako se vaša konzumacija informacija promijenila tijekom posljednjih nekoliko godina?"
+      ]
+    },
+    {
+      "type": "input",
+      "title": "Politički digitalni ekosustav",
+      "minutes": 20,
+      "bullets": [
+        "**Ekonomija pažnje:** algoritamski utjecaj od 2009.",
+        "**Novi politički prostori:** Discord, Twitch i Reddit kao novi „gradski trgovi“.",
+        "**Ideološki lijevci:** kako memeovi djeluju kao „trojanski konji“ za radikalizaciju i pomiču Overtonov prozor."
+      ]
+    },
+    {
+      "type": "case",
+      "title": "Radionica: Anatomija viralne poruke",
+      "minutes": 30,
+      "bullets": [
+        "Analiza uspješnog videoaktivizma.",
+        "Fokus na **pravilu „3 sekunde“**, ritmu i emocionalnim okidačima (smijeh, ljutnja, pripadanje).",
+        "Studija slučaja: Zašto dijelimo ono što dijelimo? Izgradnja identiteta nasuprot osjećaju pripadnosti zajednici."
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Grupna aktivnost: Seciranje digitalnog utjecaja",
+      "minutes": 20,
+      "activity": {
+        "intro": "Grupe analiziraju aktualni viralni video ili politički meme. Trebaju prepoznati:",
+        "steps": [
+          { "title": "Ciljanu emociju", "text": "Što bi sadržaj trebao izazvati kod gledatelja?" },
+          { "title": "Skrivenu poruku", "text": "Krije li se ispod sadržaja ideološka poruka (ako postoji)?" },
+          { "title": "Algoritamsko pojačanje", "text": "Na koji je način algoritam vjerojatno pojačao doseg sadržaja?" }
+        ]
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Refleksija i zatvaranje",
+      "minutes": 10,
+      "prompts": [
+        "Kako možemo ostati kritični u digitalno-feudalnom ekosustavu?",
+        "Možemo li ove platforme koristiti za dobro bez upadanja u „slacktivism“?"
+      ],
+      "keyMessage": "Svaki/a sudionik/ca dijeli jednu strategiju za svjesniji odnos prema algoritamskom utjecaju."
+    }
+  ],
+  "materials": [
+    { "name": "Politički konteksti i digitalni ekosustavi", "form": "Prezentacija", "kind": "presentation" },
+    { "name": "Odabir aktualnih političkih sadržaja s TikToka/Reelsa", "form": "Studije slučaja", "kind": "case" },
+    { "name": "„Anatomija algoritamske objave“ – predložak za dekonstrukciju", "form": "Radni list", "kind": "worksheet" },
+    { "name": "Laptop, projektor, internetska veza i osobni uređaji za kratko istraživanje", "form": "Tehnička oprema", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "Evaluacija se provodi kroz aktivnu participaciju u grupnoj analizi, kvalitetu uvida zabilježenih u radnim listovima i završnu usmenu refleksiju o medijskoj odgovornosti."
+  ]
+}
