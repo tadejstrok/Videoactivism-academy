@@ -1,0 +1,111 @@
+{
+  "slug": "political-contexts",
+  "number": 1,
+  "color": "blue",
+  "title": "Politični konteksti in digitalni ekosistemi",
+  "summary": "Kako algoritmi, memi in ekonomija pozornosti oblikujejo politično resničnost ter kako uporabljati videoaktivizem, ne da bi nas pri tem zmanipulirali.",
+  "topics": ["Ekonomija pozornosti", "Memi kot trojanski konji", "Kliktivizem"],
+  "description": [
+    "Ta učna lekcija ponuja poglobljen vpogled v korenito preobrazbo političnega, družbenega in državljanskega življenja v dobi digitalnih platform. Raziskuje, kako je sodobna družba postala »izjemno prisotna na spletu« (extremely online), kar vpliva na vse generacije, ter uvaja pojem »možganske gnilobe« (brain rot – oxfordska beseda leta 2024), ki opisuje preobremenjenost uma z algoritemskimi vsebinami.",
+    "Učna lekcija sledi razvoju digitalnih prostorov od omrežij iz leta 2010, ki so temeljila na besedilu, do okolja leta 2025, v katerem prevladujejo video vsebine. Ta premik obravnava kot vrnitev k »ustni kulturi«, v kateri kratki videoposnetki na družbenih omrežjih predstavljajo nova ognjišča za pripovedovanje zgodb.",
+    "Udeleženci bodo kritično preučili, kako so fizične politične prostore (kot so mladinska kultura, družbeni centri in skvoti iz 80. in 90. let) nadomestili digitalni prostori, kot so Discord, Twitch, Reddit in Fortnite.",
+    "Skozi analizo se lekcija loteva nevarnosti »tehnofevdalizma« (kjer platforme delujejo kot sodobna fevdalna posestva) ter »kliktivizma/slektivizma« (clicktivism/slacktivism – pasivnega spletnega aktivizma). Razkriva skrite mehanizme radikalizacije ter prikazuje, kako spletni memi delujejo kot »trojanski konji« za ideologijo in kako se Overtonovo okno premika skozi ironijo in objavljanje provokativnih nesmislov (shitposting).",
+    "Nazadnje lekcija razčleni algoritemsko »ekonomijo pozornosti« (katere korenine segajo v leto 2009, ko je Facebook uvedel algoritemski prikaz objav kot digitalni »izvirni greh« človeštva) ter udeležence opremi s psihološkimi in tehničnimi strategijami učinkovitega videoaktivizma."
+  ],
+  "duration": 90,
+  "objectives": [
+    "Prepoznati mehanizme »ekonomije pozornosti« in način, kako algoritmi oblikujejo politično resničnost",
+    "Analizirati, kako humor in »shitposting« delujeta kot sredstvi za ideološko radikalizacijo",
+    "Razumeti premik od fizičnih k digitalnim političnim prostorom (Discord, Twitch, TikTok itd.)",
+    "Oceniti učinkovitost in tveganja »kliktivizma« v primerjavi s konkretnim političnim delovanjem",
+    "Odgovorno uporabljati načela uspešnega videoaktivizma (pravilo treh sekund, metrike in čustvene sprožilce)"
+  ],
+  "targetGroup": [
+    "Mladi, ki jih zanimajo medijska pismenost, digitalna sociologija in aktivizem, zlasti tisti, ki so dejavni v digitalnem prostoru in želijo razumeti ozadne mehanizme vsebin, ki jih spremljajo in ustvarjajo."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Pojasniti vpliv digitalne ekonomije pozornosti",
+      "content": "Ekonomija pozornosti, algoritmi kot »črne skrinjice«, vloga »možganske gnilobe« (brain rot)",
+      "methods": "Kratko predavanje; vizualna analiza objav na družbenih omrežjih",
+      "evaluation": "Razprava v skupini; refleksija"
+    },
+    {
+      "outcome": "Prepoznati ideološka orodja v digitalnih medijih",
+      "content": "Memi kot »trojanski konji«, »shitposting«, premikanje Overtonovega okna",
+      "methods": "Vodena analiza študij primerov (memi/videoposnetki)",
+      "evaluation": "Delovni list o ideoloških sporočilih"
+    },
+    {
+      "outcome": "Oceniti strategije digitalnega aktivizma",
+      "content": "Kliktivizem v primerjavi z vplivom v resničnem svetu; videoaktivizem; psihološki sprožilci",
+      "methods": "Študija primera uspešnih in neuspešnih digitalnih kampanj",
+      "evaluation": "Skupinska predstavitev; medvrstniške povratne informacije"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "Digitalni vsakdan",
+      "minutes": 10,
+      "bullets": [
+        "Razprava o izrazu »možganska gniloba« (brain rot) in prehodu z besedilnih okolij na okolja, nasičena z videoposnetki."
+      ],
+      "prompts": [
+        "Kako se je v zadnjih nekaj letih spremenil vaš način spremljanja in uporabe informacij?"
+      ]
+    },
+    {
+      "type": "input",
+      "title": "Politični digitalni ekosistem",
+      "minutes": 20,
+      "bullets": [
+        "**Ekonomija pozornosti:** vpliv algoritmov od leta 2009 dalje.",
+        "**Novi politični prostori:** Discord, Twitch in Reddit kot novi »mestni trgi«.",
+        "**Ideološki lijaki:** kako memi delujejo kot »trojanski konji« za radikalizacijo in kako premikajo Overtonovo okno."
+      ]
+    },
+    {
+      "type": "case",
+      "title": "Delavnica: anatomija viralnega sporočila",
+      "minutes": 30,
+      "bullets": [
+        "Analiza uspešnega videoaktivizma.",
+        "Poudarek na **»pravilu treh sekund«**, tempu/ritmu ter čustvenih sprožilcih (smeh, jeza, pripadnost).",
+        "Študija primera: zakaj delimo to, kar delimo? (Gradnja lastne identitete v primerjavi s pripadnostjo skupnosti.)"
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Skupinska aktivnost: razčlemba digitalnega vpliva",
+      "minutes": 20,
+      "activity": {
+        "intro": "Skupine analizirajo aktualen viralni videoposnetek ali politični mem. Opredeliti morajo:",
+        "steps": [
+          { "title": "Predvideno čustvo", "text": "Kaj želi vsebina sprožiti v gledalcu?" },
+          { "title": "Morebitno skrito sporočilo", "text": "Ali se pod površjem skriva ideološko sporočilo?" },
+          { "title": "Spodbuda algoritma", "text": "Kako je algoritem najverjetneje spodbudil doseg te vsebine?" }
+        ]
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Refleksija in zaključek",
+      "minutes": 10,
+      "prompts": [
+        "Kako lahko ostanemo kritični v digitalno-fevdalnem ekosistemu?",
+        "Ali lahko te platforme uporabimo v dobre namene, ne da bi zapadli v »slektivizem« (slacktivism)?"
+      ],
+      "keyMessage": "Udeleženci delijo po eno strategijo za bolj preudaren in ozaveščen odnos do vpliva algoritmov."
+    }
+  ],
+  "materials": [
+    { "name": "Politični konteksti in digitalni ekosistemi", "form": "Predstavitev", "kind": "presentation" },
+    { "name": "Izbor aktualnih političnih vsebin s platform TikTok / Reels", "form": "Študije primerov", "kind": "case" },
+    { "name": "»Anatomija algoritemske objave« (predloga za dekonstrukcijo)", "form": "Delovni list", "kind": "worksheet" },
+    { "name": "Prenosni računalnik, projektor, internetna povezava in lastne naprave za hitro raziskovanje", "form": "Tehnična oprema", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "Evalvacija se izvaja skozi aktivno sodelovanje pri skupinski analizi, kakovost ugotovitev v delovnih listih ter zaključno ustno refleksijo o medijski odgovornosti."
+  ]
+}

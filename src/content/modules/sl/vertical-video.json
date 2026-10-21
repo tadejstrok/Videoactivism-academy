@@ -1,0 +1,150 @@
+{
+  "slug": "vertical-video",
+  "number": 4,
+  "color": "peach",
+  "title": "Kratki vertikalni video za digitalni aktivizem",
+  "summary": "Šest formatov, ena zgradba (Kavelj → Jedro → Poziv k dejanju) in pravila platform, ki jih potrebuješ, da sporočilo postane video, mimo katerega ljudje ne podrsajo.",
+  "topics": ["6 video formatov", "Kavelj → Jedro → Poziv", "Platforme in shadowban"],
+  "description": [
+    "Ta učna lekcija služi kot praktičen vodnik za izkoriščanje kratkih vertikalnih videoposnetkov za spodbujanje državljanskega udejstvovanja, političnih komentarjev in družbenega aktivizma. Pojasnjuje, zakaj je vertikalni video postal prevladujoč format digitalne komunikacije ter kako njegova celozaslonska usmerjenost ustvarja občutek neposrednosti, nujnosti in pristnosti.",
+    "Udeleženci bodo analizirali celotno tipologijo stilov kratkih videoposnetkov – od »avtomobilskih izpadov bumerjev« (boomer car rants) in dialogov z več vlogami do satire, video esejev in uličnih anket (vox populi). Spoznali bodo praktične strategije za ustvarjanje vsebin, vključno z »miselnostjo opazovalca« (Lookout Mindset), ugrabitvijo trendov (trend-jacking), obravnavo najmočnejših argumentov nasprotne strani (steelmanning) ter gradnjo strukturiranih scenarijev po modelu Kavelj → Jedro → Poziv k dejanju (Hook → Core → Call to Action).",
+    "Poleg tega se učna lekcija poglobi v psihološke taktike, kot so raba spletnih memov kot »trojanskih konjev« za vpeljavo zapletenih ali radikalnih idej, grajenje persone (spletne osebnosti) ter izkoriščanje konfrontacije za povečanje deljenja vsebin (shareability).",
+    "Na koncu se bodo udeleženci seznanili s tehnično logistiko, specifikacijami platform (TikTok, Instagram Reels, YouTube Shorts), najboljšimi praksami objavljanja, varnostnimi opozorili ter strategijami za izogibanje algoritemski cenzuri ali prikritemu zmanjšanju dosega (shadowbanning) pri občutljivih političnih temah."
+  ],
+  "duration": 90,
+  "variants": [
+    { "minutes": 60, "text": "Osredotoča se izključno na tipologijo videoposnetkov in strukturo »Kavelj → Jedro → Poziv k dejanju«; praktična vaja z vizualno snemalno knjigo (storyboard) se izpusti." },
+    { "minutes": 120, "text": "Skupinsko aktivnost razširi v praktično delavnico ustvarjanja vsebin, kjer skupine s svojimi pametnimi telefoni posnamejo in zmontirajo 60-sekundni surov osnutek vertikalnega videa, čemur sledi ogled v skupini." }
+  ],
+  "objectives": [
+    "Razumeti glavne video formate: oceniti prednosti, slabosti in produkcijsko zahtevnost šestih ključnih vertikalnih formatov (monološki nagovori/izpadi, dialogi, satira/skeči, video eseji, videoposnetki z odzivi in vox populi)",
+    "Uporabiti strateške tehnike ustvarjanja: »miselnost opazovalca« (Lookout Mindset), vključevanje trendov (npr. ikon pop kulture) in metodo steelmanning s pomočjo orodij umetne inteligence za izboljšanje sporočil",
+    "Obvladati psihološke taktike: uveljaviti model »Kavelj → Jedro → Poziv k dejanju«, uporabiti humor kot »trojanskega konja« za resna sporočila, zgraditi poistovetljive persone ter jasno izpostaviti argumente nasprotne strani",
+    "Obvladati tehnične specifikacije in se izogniti cenzuri: upoštevati časovne omejitve platform in postavitev podnapisov, se izogibati varnostnim tveganjem (npr. snemanju med vožnjo) ter sprožilcem algoritemskih sankcij pri občutljivih temah (npr. vojna, politični konflikti)"
+  ],
+  "targetGroup": [
+    "Mladi ustvarjalci, digitalni aktivisti, zaposleni v nevladnih organizacijah, študenti komunikologije in državljanski organizatorji, ki želijo družbena in politična sporočila prevesti v viralne, privlačne kratke video formate."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Razlikovati med vertikalnimi video formati in njihovo strateško rabo",
+      "content": "Trendi mobilne potrošnje; 6 video formatov (monološki nagovori, dialogi, satira, eseji, odzivi, vox populi)",
+      "methods": "Vizualna predstavitev s primeri s TikToka/Reelsov iz resničnega sveta (npr. @danesjenovdan)",
+      "evaluation": "Kviz prepoznavanja formatov; ustno sodelovanje"
+    },
+    {
+      "outcome": "Uporabiti modele sporočanja in psihološke kavlje",
+      "content": "Model Kavelj → Jedro → Poziv k dejanju; taktike trojanskega konja; poistovetenje z memom Wojak; argumentacija po metodi steelmanning; gradnja persone",
+      "methods": "Vodena razčlemba scenarija; analiza viralnih političnih kavljev",
+      "evaluation": "Izpolnjen delovni list z osnutkom scenarija"
+    },
+    {
+      "outcome": "Uvesti strateško ugrabitev trendov (trend-jacking) in odkrivanje tem",
+      "content": "»Miselnost opazovalca« (Lookout Mindset); prevzemanje/ugrabitev trendov (npr. Labubu, Breaking Bad); viharjenje možganov s pomočjo umetne inteligence",
+      "methods": "Skupinska vaja viharjenja možganov z uporabo aktualnih tem pop kulture",
+      "evaluation": "Kakovost povezovanja teme in trenda pri skupinskem delu"
+    },
+    {
+      "outcome": "Upoštevati pravila platform, taktike objavljanja in moderacijo",
+      "content": "Omejitve platform (TikTok, Instagram, Shorts); postavitev podnapisov; varnostna opozorila (česa ne početi); obvladovanje prikritega zmanjšanja dosega (shadowbanning) in cenzure občutljivih tem",
+      "methods": "Vsebinski vnos v obliki predavanja; analiza pravil platform in prikritih ključnih besed",
+      "evaluation": "Kviz; pregled končnega kontrolnega seznama"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "Vertikalna revolucija",
+      "minutes": 10,
+      "bullets": [
+        "**Mobilni kontekst:** izvajalec pojasni prehod s statičnih na video družbena omrežja ter predstavi ključno statistiko: več kot 90 % spremljanja družbenih omrežij poteka na mobilnih napravah.",
+        "**Pokončni v primerjavi z ležečim formatom:** usmerjenost naprave je glavna ovira za uporabnika. Vertikalni video zavzame 100 % zaslonske površine ter s tem ustvarja občutek bližine, nujnosti in neposredne pristnosti.",
+        "**Poziv k dejanju za ustvarjalce:** citat Roberta Johnsona: »Svet vodijo tisti, ki se pojavijo.« Poudarek na pomenu rednega objavljanja na TikToku, Instagramu in YouTube Shorts."
+      ]
+    },
+    {
+      "type": "input",
+      "title": "Tipologija kratkih video formatov",
+      "minutes": 20,
+      "body": [
+        "Izvajalec razčleni šest primarnih formatov ter podrobno opiše njihovo produkcijsko zahtevnost in strateške prednosti:"
+      ],
+      "formats": [
+        { "name": "Monološki nagovor/izpad (rant)", "text": "Govor neposredno v kamero (npr. »avtomobilski izpadi bumerjev«). Visoka čustvena pristnost in hitra produkcija, vendar lahko pride do zasičenosti občinstva." },
+        { "name": "Dialog", "text": "En ustvarjalec igra dve vlogi/osebi, ki gledata stran od kamere. Odlično za obravnavo argumentov in protiargumentov na nadzorovan ter zabaven način." },
+        { "name": "Skeč in satira", "text": "Visok potencial za viralnost. Uporablja humor za razbijanje predsodkov." },
+        { "name": "Video esej / razlagalni video", "text": "Format brez obraza s pripovedovanjem prek pokrivnih posnetkov (B-roll) in grafik. Omogoča poglobljeno obravnavo tematik brez nastopanja pred kamero, vendar zahteva temeljito pripravljen scenarij." },
+        { "name": "Odziv (react)", "text": "Opira se na vabe na dramo in provokacije." },
+        { "name": "Ulična anketa (vox populi)", "text": "Prinaša visoko pristnost, čeprav ustvarjalci pri tem delno izgubijo nadzor nad končno zgodbo." }
+      ]
+    },
+    {
+      "type": "input",
+      "title": "Strategija, psihologija in tehnične taktike",
+      "minutes": 25,
+      "bullets": [
+        "**Miselnost opazovalca in trendi:** ustvarjalci uporabljajo »družbeno poslušanje« (social listening) – spremljajo vire novic, komentarje ter trende pop in spletne kulture, da zaznajo in potencialno ugrabijo že obstoječo pozornost.",
+        "**Steelmanning:** predvidevanje in obravnava najmočnejše možne različice nasprotnikovega argumenta (z uporabo orodij AI za preizkušanje protiargumentov).",
+        "**Trojanski konj:** kako humor in memi zaobidejo obrambne mehanizme občinstva ter posredujejo politično ideologijo.",
+        "**Poistovetljivost (Wojak / »dobesedno jaz«):** prikazovanje pristnih čustev, nepoliranost in neposredno nagovarjanje (»ti«).",
+        "**Konfrontacija:** vsebine z jasno določenim nasprotnikom se delijo dvakrat pogosteje. »Nalivanje čistega vina« (neposredna, odkrita iskrenost) gradi zaupanje."
+      ],
+      "callout": {
+        "title": "Vsak video: Kavelj → Jedro → Poziv",
+        "items": [
+          "Kavelj: prve 3 sekunde",
+          "Jedrno sporočilo",
+          "Poziv k dejanju (CTA)"
+        ]
+      },
+      "specs": [
+        { "name": "TikTok", "text": "Prilagodljiva dolžina" },
+        { "name": "Instagram Reels", "text": "Priporočeno do 3 minut" },
+        { "name": "YouTube Shorts", "text": "Do 3 minut" }
+      ],
+      "warnings": [
+        "Podnapisi morajo kavelj prikazati na zaslonu v prvih 1–3 sekundah. Opisi naj delujejo kot napovednik z ustreznimi ključnimi besedami in ključniki (hashtagi).",
+        "Nikoli ne snemajte med vožnjo z avtomobilom ali kolesom.",
+        "Pazite se algoritemskega zmanjšanja dosega (shadowbanning) pri obravnavi vojne, nasilja ali občutljivih konfliktov (npr. Izrael/Palestina); po potrebi uporabite kodiran jezik (algospeak)."
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Skupinska aktivnost: priprava scenarija za vertikalni aktivistični video",
+      "minutes": 20,
+      "activity": {
+        "intro": "Udeleženci v skupinah po 3–4 pripravijo osnutek scenarija in vizualno snemalno knjigo (storyboard) za 60-sekundni vertikalni video, ki obravnava državljansko ali družbeno temo.",
+        "steps": [
+          { "title": "Izberite format", "text": "En format iz tipologije (npr. dialog, satira ali razlagalni video)." },
+          { "title": "Sestavite kavelj", "text": "Za prve 3 sekunde – vizualni in verbalni." },
+          { "title": "Vključite trojanskega konja", "text": "Trend, humor ali referenco iz pop kulture." },
+          { "title": "Določite nasprotnika", "text": "Jasen nasprotnik ali protiargument (metoda steelmanning)." },
+          { "title": "Zaključite s pozivom", "text": "Izvedljiv poziv k dejanju (Call to Action)." }
+        ],
+        "note": "Vsaka skupina v 90 sekundah predstavi svoj koncept videa celotni skupini. Bi prve 3 sekunde ustavile drsenje po zaslonu?"
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Refleksija in zaključek",
+      "minutes": 15,
+      "prompts": [
+        "Kako uskladiti uporabo »vab na dramo« (drama bait) ali konfrontacije z ohranjanjem etičnega in resnicoljubnega sporočanja?",
+        "Kako lahko aktivisti razpravljajo o strogo moderiranih/cenzuriranih političnih temah, ne da bi bili njihovi profili sankcionirani?"
+      ],
+      "keyMessage": "Izvajalec ponovi tehnična opozorila (kakovost zvoka, varnostna tveganja, postavitev podnapisov) in poudari, da v ekosistemu kratkih video vsebin doslednost premaga popolnost."
+    }
+  ],
+  "materials": [
+    { "name": "Prosojnice s statistiko o mobilnih napravah, primerjavo ležečega in pokončnega formata, tipologijo videoposnetkov, memi in ilustracijami (Wile E. Coyote, trojanski konj, Wojak, Labubu)", "form": "Predstavitev s prosojnicami", "kind": "presentation" },
+    { "name": "Preneseni primeri videoposnetkov za vsakega od 6 formatov", "form": "Video študije primerov", "kind": "case" },
+    { "name": "Natisljiva predloga s polji za: izbiro formata, 3-sekundni kavelj, ugrabitev trenda, jedrno sporočilo / steelman ter poziv k dejanju", "form": "Delovni list za pripravo scenarija", "kind": "worksheet" },
+    { "name": "Informativni list z dolžinami videov, varnimi območji za podnapise in nasveti za optimizacijo ključnih besed za TikTok, IG Reels in YT Shorts", "form": "Opomnik s specifikacijami platform", "kind": "worksheet" },
+    { "name": "Prenosni računalnik, projektor, zvočniki in pametni telefoni za udeležence", "form": "Tehnična oprema", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "**Formativno vrednotenje:** izvajalec preverja razumevanje med predstavitvijo tipologije tako, da od udeležencev zahteva prepoznavo formatov pri vzorčnih videoposnetkih, prikazanih na zaslonu.",
+    "**Praktična uporaba:** vrednotenje izpolnjenih delovnih listov za pripravo scenarija med skupinsko aktivnostjo z namenom preverjanja pravilne vključitve modela Kavelj → Jedro → Poziv k dejanju ter strategij trojanskega konja.",
+    "**Medvrstniški pregled:** ustne povratne informacije med predstavitvami skupin, pri čemer se oceni, ali bi predlagane prve 3 sekunde uspešno ustavile uporabnika pri drsenju po zaslonu."
+  ]
+}

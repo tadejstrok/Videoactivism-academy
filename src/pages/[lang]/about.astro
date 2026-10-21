@@ -1,16 +1,15 @@
 ---
 import Barber from '../../components/Barber.astro';
 import Base from '../../layouts/Base.astro';
-import Blob from '../../components/Blob.astro';
 import Arrow from '../../components/Arrow.astro';
-import { asset, langs, localePath, useTranslations, type Lang } from '../../i18n/ui';
+import Interested from '../../components/Interested.astro';
+import { asset, langs, type Lang } from '../../i18n/ui';
 import { site } from '../../i18n/site';
 
 export function getStaticPaths() {
   return langs.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
-const t = useTranslations(lang);
 const a = site[lang].about;
 ---
 <Base lang={lang} path="about" title={a.title} description={a.lead}>
@@ -38,24 +37,7 @@ const a = site[lang].about;
     </div>
   </section>
 
-  <section class="section section--ink">
-    <div class="wrap">
-      <div class="section-head"><Barber class="h2" text={a.peopleTitle} /></div>
-      <ul class="people">
-        {a.people.map((p) => <li><Barber as="strong" class="ptitle" text={p.title} /><p>{p.text}</p></li>)}
-      </ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <Blob variant="warm" class="reuse">
-        <Barber class="h2 no-gap" text={a.reuseTitle} />
-        <p class="lead">{a.reuse}</p>
-        <a class="btn" href={localePath(lang, 'modules')}>{t('cta.modules')} <Arrow /></a>
-      </Blob>
-    </div>
-  </section>
+  <Interested lang={lang} />
 </Base>
 
 <style>
@@ -69,11 +51,4 @@ const a = site[lang].about;
   .ext { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; color: var(--blue-deep); text-decoration: none; }
   .ext :global(svg) { width: 26px; height: 13px; }
   @media (max-width: 760px) { .partners { grid-template-columns: 1fr; } }
-  .people { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-  .ptitle { font-size: clamp(26px, 3vw, 38px); margin-bottom: 12px; }
-  .people p { color: rgba(255,255,255,.85); }
-  @media (max-width: 860px) { .people { grid-template-columns: 1fr; } }
-  .reuse { max-width: 900px; margin: 0 auto; text-align: center; --rot: -1deg; }
-  .reuse .barber { margin-bottom: 16px; justify-items: center; }
-  .reuse .lead { margin-bottom: 24px; }
 </style>

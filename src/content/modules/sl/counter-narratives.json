@@ -1,0 +1,143 @@
+{
+  "slug": "counter-narratives",
+  "number": 2,
+  "color": "coral",
+  "title": "Od škodljivih narativov do protipripovedi",
+  "summary": "Prepoznaj škodljive zgodbe, ki oblikujejo javno mnenje, in se nanje odzovi z dejstvi, kontekstom in dostojanstvom, ne z žalitvami.",
+  "topics": ["Narativi", "Čustveni sprožilci", "Protipripoved v 5 korakih"],
+  "description": [
+    "Učna lekcija udeležencem predstavi koncept narativov in protipripovedi kot orodij za razumevanje, izpodbijanje in preoblikovanje škodljivih sporočil v medijih, politiki in digitalni komunikaciji. Raziskuje, kako prevladujoči narativi oblikujejo javno dojemanje družbenih vprašanj, kako lahko upravičujejo diskriminacijo, nasilje ali izključenost ter kako je mogoče protipripovedi uporabiti za povrnitev dostojanstva, zagotavljanje konteksta in spodbujanje človekovih pravic.",
+    "Skozi razpravo, primere in skupinsko delo udeleženci analizirajo, kako se škodljivi narativi pojavljajo v medijskih naslovih, objavah na družbenih omrežjih, komentarjih in javnem diskurzu. Učijo se prepoznavati čustvene sprožilce, kot so strah, jeza, gnus, ponižanje, ogroženost družbenega položaja in nezaupanje, ter kako se ta čustva pogosto uporabljajo za manipulacijo občinstva ali spodbujanje sovražnosti do marginaliziranih skupin.",
+    "Učna lekcija se osredotoča tudi na praktične strategije za ustvarjanje učinkovitih protipripovedi. Udeleženci se naučijo, kako razkriti manipulacijo, predstaviti dejstva in kontekst, spremeniti perspektivo, zaščititi dostojanstvo žrtev in marginaliziranih skupin ter pogovor preusmeriti k človekovim pravicam, enakosti in družbeni odgovornosti.",
+    "V učni lekciji so uporabljeni primeri, povezani s seksizmom, spolno pogojenim nasiljem, rasizmom, homofobijo, transfobijo in ekstremizmom. Učno lekcijo je mogoče prilagoditi nacionalnemu kontekstu z uporabo lokalno relevantnih primerov škodljivega medijskega poročanja, diskriminatornega javnega diskurza, spletnega sovražnega govora ali aktivističnih kampanj s protipripovedmi."
+  ],
+  "duration": 90,
+  "objectives": [
+    "Razumeti razliko med narativom in protipripovedjo",
+    "Prepoznati čustvene sprožilce, ki se uporabljajo v škodljivih narativih, kot so strah, jeza, gnus, ponižanje in nezaupanje",
+    "Analizirati, kako lahko protipripovedi razkrijejo manipulacijo, ponudijo dejstva, spremenijo perspektivo in zaščitijo človekove pravice",
+    "Razlikovati med učinkovito protipripovedjo ter žalitvijo, osebnim napadom, preusmerjanjem pozornosti ali praznim sarkazmom",
+    "Razviti osnovno sporočilo protipripovedi kot odziv na škodljiv narativ v medijih ali spletni komunikaciji"
+  ],
+  "targetGroup": [
+    "Učna lekcija je namenjena mladim, ki sodelujejo v programu neformalnega izobraževanja, osredotočenem na državljanske, medijske in digitalne kompetence. Še posebej je primerna za mlade, ki so dejavni na spletu, spremljajo družbene in politične vsebine, sodelujejo v razdelkih s komentarji ali razpravah na družbenih omrežjih oziroma jih zanima raba digitalne komunikacije za družbene spremembe.",
+    "Učno lekcijo je mogoče prilagoditi tudi za šolske razrede, mladinske skupine, študentske organizacije, mlade aktiviste ali udeležence z manj predhodnimi izkušnjami na področju medijske analize in ustvarjanja vsebin."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Pojasniti razliko med narativi in protipripovedmi",
+      "content": "Narativi kot zgodbe, ki oblikujejo način, kako družba razume probleme, žrtve, odgovornost in rešitve; protipripovedi kot premišljena sporočila, ki izpodbijajo škodljive prevladujoče narative",
+      "methods": "Kratek vsebinski vnos; vodena razprava; analiza primerov",
+      "evaluation": "Ustna refleksija; vprašanja izvajalca"
+    },
+    {
+      "outcome": "Prepoznati škodljive narative in čustva, ki jih sprožajo",
+      "content": "Strah, jeza, gnus, ponižanje, ogroženost družbenega položaja, izguba nadzora, zarota in nezaupanje; kako čustveni sprožilci zmanjšujejo kritično mišljenje in mobilizirajo sovražnost",
+      "methods": "Predstavitev; analiza primerov; delo v dvojicah",
+      "evaluation": "Skupinska razprava; opravljena naloga analize"
+    },
+    {
+      "outcome": "Analizirati elemente učinkovite protipripovedi",
+      "content": "Razkrivanje manipulacije; navajanje dejstev; sprememba perspektive; povrnitev dostojanstva; preokvirjanje v smeri človekovih pravic, enakosti in odgovornosti",
+      "methods": "Delavnica; delo v manjših skupinah; analiza študije primera",
+      "evaluation": "Skupinska predstavitev; medvrstniške povratne informacije"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "Katere zgodbe oblikujejo našo resničnost?",
+      "minutes": 10,
+      "body": [
+        "Izvajalec odpre srečanje s kratko predstavitvijo organizacije »Center za državljanske pobude Poreč« (Centar za građanske inicijative Poreč), ki je feministična, mirovniška in neprofitna nevladna organizacija za človekove pravice. Vodi se po načelih svobode, enakosti in nediskriminacije ter že od leta 1992 varuje in spodbuja človekove pravice ter aktivno državljanstvo. Nato izvajalec preide k vodenju kratke razprave."
+      ],
+      "prompts": [
+        "Kje se vsakodnevno srečujemo z družbenimi in političnimi »zgodbami«?",
+        "Ali lahko medijski naslovi, objave na družbenih omrežjih ali komentarji vplivajo na to, kako razumemo določene skupine ljudi?",
+        "Ali lahko zaradi zgodbe nekdo izpade kriv, nevaren, neviden ali manj vreden empatije?",
+        "Ste že kdaj videli objavo ali komentar, ki je izpodbijal škodljiv stereotip ali neresnično trditev?"
+      ],
+      "keyMessage": "Narativi niso nevtralni. Oblikujejo namreč to, kaj družba vidi kot problem, koga krivi, koga prepozna kot žrtev in kaj velja za možno rešitev."
+    },
+    {
+      "type": "input",
+      "title": "Kaj je protipripoved?",
+      "minutes": 20,
+      "bullets": [
+        "Narativi kot prevladujoče zgodbe, ki oblikujejo razumevanje javnosti",
+        "Škodljivi narativi, ki opravičujejo diskriminacijo, nasilje ali izključenost",
+        "Protipripovedi kot premišljeno oblikovana sporočila, ki izpodbijajo ali prevračajo škodljive narative",
+        "Razlika med protipripovedjo in zgolj nasprotnim mnenjem",
+        "Družbena in izobraževalna funkcija protipripovedi",
+        "Primeri protipripovedi v komentarjih, objavah na družbenih omrežjih, vizualijah, kampanjah, javnih izjavah, medijskih analizah in zagovorništvu"
+      ],
+      "callout": {
+        "title": "Protipripoved lahko …",
+        "items": [
+          "razkrije manipulacijo",
+          "ponudi dejstva in kontekst",
+          "spremeni perspektivo",
+          "zaščiti dostojanstvo in pravice marginaliziranih skupin",
+          "preokviri vprašanje v smeri pravičnosti, enakosti in odgovornosti"
+        ]
+      },
+      "keyMessage": "Protipripovedi so pomembne, ker narativi oblikujejo resničnost. Če škodljivi narativi ostanejo neizpodbijani, lahko postanejo normalizirani."
+    },
+    {
+      "type": "case",
+      "title": "Študija primera »Vsakodnevni seksizem«: od škodljivega medijskega poročanja do protipripovedi",
+      "minutes": 25,
+      "body": [
+        "Udeleženci analizirajo primer škodljivega medijskega poročanja ali spletne komunikacije. Primer se lahko nanaša na spolno pogojeno nasilje, seksizem, rasizem, homofobijo, transfobijo, migracije, ekstremizem ali drugo temo, ki je pomembna v nacionalnem kontekstu.",
+        "Izvajalec udeležence spodbudi, naj bodo pozorni ne le na to, kar je izrečeno, temveč tudi na to, kar je zamolčano. Škodljivo poročanje se na primer lahko osredotoča na govorice, zasebne podrobnosti ali čustva storilca, pri tem pa ignorira strukturno nasilje, institucionalno odgovornost, dostojanstvo žrtve ali razpoložljivo podporo."
+      ],
+      "prompts": [
+        "Kaj je prevladujoči narativ v tem primeru?",
+        "Koga se krivi, izbriše, razčloveči ali napačno predstavlja?",
+        "Kateri čustveni sprožilec je uporabljen? Ali se sporočilo opira na strah, jezo, gnus, ponižanje ali nezaupanje?",
+        "Katera dejstva ali kateri kontekst manjkajo?",
+        "Kako bi lahko sporočilo preokvirili na način, ki varuje dostojanstvo in človekove pravice?",
+        "Kako bi bila videti učinkovita protipripoved?"
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Skupinska aktivnost: oblikovanje protipripovedi",
+      "minutes": 25,
+      "activity": {
+        "intro": "Udeleženci delajo v manjših skupinah. Vsaka skupina prejme en škodljiv narativ, naslov, komentar, objavo ali scenarij in po petih korakih razvije kratko protipripoved.",
+        "steps": [
+          { "title": "Prepoznati škodljiv narativ", "text": "Kaj se sporoča? Kakšno sporočilo se širi? Katero čustvo se prebuja?" },
+          { "title": "Poimenovati škodo", "text": "Koga se krivi, razčloveči, napačno predstavlja ali izbriše?" },
+          { "title": "Vpeljati dejstva in kontekst", "text": "Katere informacije, raziskave, družbeni vzorci ali strokovna znanja manjkajo?" },
+          { "title": "Preokviriti fokus", "text": "Kako lahko sporočilo prenese odgovornost nazaj na storilce, sisteme ali strukture, namesto da krivi žrtve ali marginalizirane skupine?" },
+          { "title": "Zaključiti z vrednotami", "text": "Dostojanstvo, enakost, pravičnost, varnost, svoboda, človekove pravice ali demokratična odgovornost." }
+        ],
+        "formats": ["Komentar na družbenih omrežjih", "Spremno besedilo na Instagramu", "Scenarij za kratek video", "Naslov za plakat", "Slogan kampanje", "Vrtiljak (carousel post)"],
+        "note": "Učinkovita protipripoved ni žalitev, osebni napad, preusmerjanje pozornosti (whataboutism) ali vsebinsko prazen sarkazem. Biti mora jasna, utemeljena na dejstvih, razumljiva in spoštljiva do človekovega dostojanstva. Vsaka skupina na kratko predstavi svojo protipripoved."
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Refleksija in zaključek",
+      "minutes": 10,
+      "prompts": [
+        "Zakaj se škodljivi narativi na spletu pogosto tako hitro širijo?",
+        "Zaradi česa je protipripoved učinkovita?",
+        "Kdaj lahko odziv postane škodljiv, četudi je bil namen dober?",
+        "Kako lahko izpodbijamo škodljive narative, ne da bi pri tem reproducirali sovraštvo ali napačne informacije?",
+        "Kaj lahko mladi storijo po tem usposabljanju – na spletu in zunaj njega?"
+      ],
+      "keyMessage": "Udeleženci povedo eno ključno spoznanje lekcije."
+    }
+  ],
+  "materials": [
+    { "name": "Predstavitev: Od sovraštva do sprememb – protipripovedi v akciji", "form": "Predstavitev", "kind": "presentation" },
+    { "name": "Primeri škodljivih narativov, naslovov, objav ali komentarjev", "form": "Digitalni primeri", "kind": "case" },
+    { "name": "Analiza protipripovedi in predloga delovnega lista za oblikovanje protipripovedi", "form": "Delovni list", "kind": "worksheet" },
+    { "name": "Prenosni računalnik, projektor in internetna povezava", "form": "Tehnična oprema", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "Evalvacija se izvaja s kombinacijo razprave, skupinskega dela in kratke refleksije."
+  ]
+}

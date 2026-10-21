@@ -1,0 +1,134 @@
+{
+  "slug": "satire",
+  "number": 3,
+  "color": "yellow",
+  "title": "Kako in zakaj deluje satira",
+  "summary": "Zakaj humor doseže ljudi tam, kjer jih novice ne, in kako s satiro izpodbijati moč, ne da bi teptali šibkejše ali širili lažne novice.",
+  "topics": ["Ironija in pretiravanje", "Punching up", "Študija primera: Prime Time"],
+  "description": [
+    "Učna lekcija udeležencem predstavi satiro kot obliko državljanske, medijske in digitalne komunikacije. Raziskuje, kako satira deluje, zakaj je lahko učinkovito orodje za obravnavo družbenih in političnih vprašanj ter kako lahko humor občinstvu pomaga pri soočanju s temami, ki se sicer morda zdijo oddaljene, zapletene ali pretežke.",
+    "Skozi primere, razpravo in skupinsko delo udeleženci analizirajo satiro kot način izpodbijanja družbene moči, razkrivanja protislovij, prebijanja filtrskih mehurčkov in ustvarjanja družbeno relevantnih sporočil. Učna lekcija obravnava tudi odgovornost in tveganja satire, vključno z vprašanji zaupanja, etike, manipulacije, interpretacije občinstva ter rabe umetne inteligence pri ustvarjanju satiričnih vsebin.",
+    "Učna lekcija kot študijo primera uporablja »Prime Time«, priljubljeno hrvaško satirično oddajo s političnimi komentarji, ki jo ustvarjata in vodita Borna Sor ter Domagoj Zovak. Oddaja temelji na zabavnem tedenskem pregledu aktualnih političnih in družbenih dogodkov na Hrvaškem, pri čemer se norčuje iz političnih afer in razčlenjuje vsakodnevne absurditete. Oddaja predstavlja primer satire, ki združuje humor, medijsko kritiko, družbeni komentar in državljansko angažiranost.",
+    "V drugih okoliščinah je mogoče glede na nacionalni kontekst izbrati druge ustrezne posameznike, skupine, aktiviste ali spletne vplivneže, zlasti tiste, ki predstavljajo močne primere rabe digitalnih orodij za politični komentar skozi satiro ali druge ustvarjalne oblike izražanja."
+  ],
+  "duration": 90,
+  "variants": [
+    { "minutes": 60, "text": "Zmanjšajte obseg skupinskega dela." },
+    { "minutes": 120, "text": "Vključite dodatno ustvarjalno nalogo, pri kateri udeleženci v skupinah zasnujejo lastno satirično digitalno sporočilo ali protipripoved o družbenem vprašanju, ki zadeva mlade. Opredelijo temo ali problem, ciljno občinstvo, ključno sporočilo, komunikacijski format, ton, satirično sredstvo, morebitno spremno besedilo, scenarij ali naslov ter predvideni učinek na občinstvo. Aktivnost mora poudariti odgovorno rabo humorja in zagotoviti, da satira ne utrjuje stereotipov, sovražnega govora ali napačnih informacij." }
+  ],
+  "objectives": [
+    "Razumeti vlogo satire v državljanski in medijski komunikaciji",
+    "Pojasniti, kako se lahko satira odziva na strah, apatijo, dezinformacije in družbeno nemoč",
+    "Analizirati, kako se humor, pretiravanje, ironija in sarkazem uporabljajo za posredovanje družbenega ali političnega sporočila",
+    "Razlikovati med satiro, napačnimi informacijami, žaljivim humorjem in manipulativnimi vsebinami",
+    "Razmisliti o etični odgovornosti satirične komunikacije",
+    "Razviti osnovni koncept za satirično sporočilo ali digitalno protipripoved"
+  ],
+  "targetGroup": [
+    "Učna lekcija je namenjena mladim, ki sodelujejo v programu neformalnega izobraževanja, osredotočenem na državljanske, medijske in digitalne kompetence. Še posebej je primerna za mlade, ki so dejavni v digitalnem prostoru, ustvarjajo spletne vsebine, se vključujejo v družbene komentarje ali pa jih zanima uporaba humorja in ustvarjalne komunikacije za doseganje družbenih sprememb.",
+    "Učno lekcijo je mogoče prilagoditi tudi bolj homogenim skupinam, kot so šolski razredi, mladinske skupine ali udeleženci z manj predhodnimi izkušnjami pri ustvarjanju digitalnih vsebin."
+  ],
+  "outcomes": [
+    {
+      "outcome": "Pojasniti, zakaj je lahko satira močna oblika državljanske komunikacije",
+      "content": "Satira kot odziv na nemoč; politična apatija; humor kot vstopna točka v težke teme; satira kot orodje za javno udejstvovanje",
+      "methods": "Kratek vsebinski vnos; vodena razprava; analiza primerov",
+      "evaluation": "Skupinska razprava; ustna refleksija"
+    },
+    {
+      "outcome": "Prepoznati ključne elemente učinkovite satire",
+      "content": "Ironija; pretiravanje; sarkazem; kontrast; absurdnost; čustveni kavelj (emotional hook); časovna umeščenost (timing); tarča kritike; poanta (punchline); poziv k dejanju",
+      "methods": "Delavnica; analiza satiričnih primerov; delo v manjših skupinah",
+      "evaluation": "Izpolnjen delovni list za analizo; skupinska predstavitev"
+    },
+    {
+      "outcome": "Razmisliti o etični in politični odgovornosti satire",
+      "content": "Zaupanje; iskrenost; razlika med satiro in lažnimi novicami; kritika močnejših v primerjavi s teptanjem šibkejših (punching up vs punching down); tveganja napačnega razumevanja; pravne in družbene posledice",
+      "methods": "Moderirana razprava; analiza študije primera; debata",
+      "evaluation": "Vprašanja za refleksijo; komentarji skupine in izvajalca"
+    }
+  ],
+  "steps": [
+    {
+      "type": "intro",
+      "title": "Čemu se smejemo in zakaj?",
+      "minutes": 10,
+      "prompts": [
+        "Katero je bilo zadnje družbeno ali politično vprašanje, ki ste ga videli predstavljeno skozi humor?",
+        "Ali je humor to temo naredil lažje razumljivo?",
+        "Ali lahko humor spodbudi ljudi, da jim postane mar za resne teme?"
+      ],
+      "keyMessage": "Satira ni le zabava, temveč tudi oblika komunikacije in družbenega komentarja."
+    },
+    {
+      "type": "input",
+      "title": "Kako in zakaj deluje satira",
+      "minutes": 20,
+      "bullets": [
+        "Satira kot odziv na nemoč in politično apatijo",
+        "Humor kot psihološka obramba pred strahom in negotovostjo",
+        "Satira kot način za prebijanje filtrskih mehurčkov in doseganje občinstva, ki se morda izogiba tradicionalnim novicam",
+        "Pomen zaupanja in iskrenosti v satirični komunikaciji",
+        "Satira kot agregator novic, ki lahko zapletene teme prevede v dostopne formate",
+        "Satira v dobi umetne inteligence in algoritemskih vsebin"
+      ],
+      "keyMessage": "Satira deluje, ker združuje čustveno vključenost, kritično razmišljanje in prepoznavno družbeno resničnost."
+    },
+    {
+      "type": "case",
+      "title": "Študija primera: Prime Time",
+      "minutes": 25,
+      "body": [
+        "Udeleženci analizirajo oddajo Prime Time kot primer satirične državljanske komunikacije. Izvajalec jih spodbudi k razmisleku o satiri ne le kot o komediji, temveč kot o formatu, ki lahko informira, kritizira in mobilizira."
+      ],
+      "prompts": [
+        "Katera družbena ali politična vprašanja obravnava tovrstna satira?",
+        "Kdo je ciljno občinstvo?",
+        "Zaradi česa je ta format dostopen ali primeren za deljenje (shareable)?",
+        "Kako združuje humor z informacijami?",
+        "Zakaj bi lahko občinstvo bolj zaupalo satiričnemu glasu kot »nevtralnemu« medijskemu glasu?",
+        "Kakšna so tveganja tega pristopa?"
+      ]
+    },
+    {
+      "type": "activity",
+      "title": "Skupinska aktivnost: razčlemba satire",
+      "minutes": 25,
+      "activity": {
+        "intro": "Udeleženci delajo v manjših skupinah. Vsaka skupina analizira en satirični primer, spletni mem, skeč, kratek video, objavo ali naslov in opredeli:",
+        "steps": [
+          { "title": "Tema", "text": "Kateri temi ali problemu je posvečen?" },
+          { "title": "Tarča kritike", "text": "Koga ali kaj kritizira?" },
+          { "title": "Ciljno občinstvo", "text": "Komu je namenjen?" },
+          { "title": "Humoristično sredstvo", "text": "Ironija, pretiravanje, kontrast, absurdnost …?" },
+          { "title": "Ključno sporočilo", "text": "Kaj v resnici sporoča?" },
+          { "title": "Čustveni odziv", "text": "Kakšen odziv želi sprožiti?" },
+          { "title": "Ocena", "text": "Ali je satira jasna, odgovorna in učinkovita?" }
+        ],
+        "note": "Vsaka skupina na kratko predstavi svojo analizo."
+      }
+    },
+    {
+      "type": "reflection",
+      "title": "Refleksija in zaključek",
+      "minutes": 10,
+      "prompts": [
+        "Kdaj je satira koristna?",
+        "Kdaj lahko satira postane škodljiva?",
+        "Po čem se satira razlikuje od dezinformacij?",
+        "Kako lahko satira ljudi premakne od smeha k razmisleku ali dejanju?"
+      ],
+      "keyMessage": "Udeleženci povedo eno ključno spoznanje lekcije."
+    }
+  ],
+  "materials": [
+    { "name": "Predstavitev: Kako in zakaj deluje satira", "form": "Predstavitev", "kind": "presentation" },
+    { "name": "Primeri satiričnih videov, objav, memov ali naslovov", "form": "Digitalni primeri", "kind": "case" },
+    { "name": "Delovni list za analizo satire", "form": "Delovni list", "kind": "worksheet" },
+    { "name": "Predloga za pripravo satiričnega sporočila (120-minutna različica)", "form": "Delovni list", "kind": "worksheet" },
+    { "name": "Prenosni računalnik, projektor in internetna povezava", "form": "Tehnična oprema", "kind": "equipment" }
+  ],
+  "evaluation": [
+    "Evalvacija se izvaja s kombinacijo razprave, skupinskega dela in kratke refleksije."
+  ]
+}

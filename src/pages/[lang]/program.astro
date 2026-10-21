@@ -14,6 +14,7 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const c = site[lang];
 const p = c.program;
+const people = c.about;
 ---
 <Base lang={lang} path="program" title={p.title} description={p.lead}>
   <section class="intro">
@@ -89,7 +90,16 @@ const p = c.program;
     </div>
   </section>
 
-  <section class="section pt0">
+  <section class="section section--ink">
+    <div class="wrap">
+      <div class="section-head"><Barber class="h2" text={people.peopleTitle} /></div>
+      <ul class="people">
+        {people.people.map((x) => <li><Barber as="strong" class="ptitle" text={x.title} /><p>{x.text}</p></li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="wrap cols">
       <div>
         <Barber class="h2 sm" text={p.durationTitle} />
@@ -117,6 +127,10 @@ const p = c.program;
 </Base>
 
 <style>
+  .people { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .ptitle { font-size: clamp(26px, 3vw, 38px); margin-bottom: 12px; }
+  .people p { color: rgba(255,255,255,.85); }
+  @media (max-width: 860px) { .people { grid-template-columns: 1fr; } }
   .intro { position: relative; padding: clamp(40px, 6vw, 72px) 0 24px; overflow: hidden; }
   .fig { position: absolute; right: max(-40px, calc(50% - 760px)); top: 40px; width: clamp(160px, 17vw, 240px); }
   @media (max-width: 1100px) { .fig { display: none; } }

@@ -205,7 +205,7 @@ const en: SiteCopy = {
     title: 'About',
     lead: 'The Videoactivism Academy is a joint programme of two organisations from Slovenia and Croatia, co-funded by the European Union.',
     partners: [
-      { name: 'Danes je nov dan', country: 'Slovenia', text: 'Institute for other studies. Builds digital tools and campaigns for a more democratic and transparent society, and makes political video and satire for social media.', logo: 'djnd-logo.png', url: 'https://danesjenovdan.si' },
+      { name: 'Danes je nov dan', country: 'Slovenia', text: 'Non-profit organisation that works at the intersection of digital technologies and democratic processes to build a more inclusive and equitable collective future.', logo: 'djnd-logo.png', url: 'https://danesjenovdan.si' },
       { name: 'Udruga Delta', country: 'Croatia', text: 'An association from Rijeka working on youth work, non-formal education and the development of civic competences.', logo: 'delta-logo.png', url: 'https://www.udruga-delta.hr' },
     ],
     peopleTitle: 'People',
@@ -221,11 +221,11 @@ const en: SiteCopy = {
 
 const sl: SiteCopy = {
   hero: {
-    kicker: 'Poročilo o projektu in odprt kurikul',
+    kicker: 'Poročilo o projektu in odprt učni načrt',
     pitch: '20 mladih iz Slovenije in Hrvaške se je naučilo ustvarjati videe, ki se upirajo sovražnemu govoru, polarizaciji in dezinformacijam. Takole je potekalo in tako ga lahko izvede tudi vaša organizacija.',
     facts: ['20 udeležencev', 'SI + HR', '4-dnevni bootcamp', '6 mesecev mentorstva', 'Zaključni dogodek'],
     report: 'Kako je potekalo',
-    curriculum: 'Uporabi kurikul',
+    curriculum: 'Uporabi učni načrt',
   },
   forYou: {
     title: 'Kdo je sodeloval',
@@ -281,8 +281,8 @@ const sl: SiteCopy = {
     items: ['Vlog', 'Podkast', 'Razlagalni video', 'Prenos v živo', 'Politična satira', 'Vox pop', 'Dialog', 'Rant', 'Skeč'],
   },
   modules: {
-    title: 'Odprt kurikul',
-    lead: 'Učne priprave, ki smo jih uporabili na bootcampu, so prosto na voljo mladinskim organizacijam, šolam in nevladnim organizacijam za samostojno izvedbo.',
+    title: 'Odprt učni načrt',
+    lead: 'Učne lekcije, ki smo jih uporabili na bootcampu, so prosto na voljo mladinskim organizacijam, šolam in nevladnim organizacijam za samostojno izvedbo.',
     points: [
       { title: 'Pripravljeno za izvedbo', text: 'Vsak modul je 90-minutna delavnica s potekom po korakih, vprašanji za pogovor in skupinskimi aktivnostmi.' },
       { title: 'Enostavno prilagodljivo', text: 'Krajše in daljše različice ter primeri, ki jih lahko zamenjate s primeri iz svoje države.' },
@@ -293,7 +293,7 @@ const sl: SiteCopy = {
     title: 'Vas program zanima?',
     lead: 'Izvedite ga sami ali pa povabite ljudi, ki so ga ustvarili.',
     options: [
-      { title: 'Uporabite kurikul sami', text: 'Vzemite učne priprave, jih prilagodite svoji skupini in module izvedite samostojno. Prosto za neformalno izobraževanje.', button: 'Prebrskaj kurikul' },
+      { title: 'Uporabite učni načrt sami', text: 'Vzemite učne lekcije, jih prilagodite svoji skupini in module izvedite samostojno. Prosto za neformalno izobraževanje.', button: 'Prebrskaj učni načrt' },
       { title: 'Naša ekipa ga izvede z vami', text: 'Naša izkušena ekipa iz Danes je nov dan in Delte lahko za vašo organizacijo pripravi, vodi in mentorira podoben program, od posamezne delavnice do celotnega bootcampa z mentorstvom.', button: 'Pišite nam' },
     ],
   },
@@ -353,8 +353,8 @@ const sl: SiteCopy = {
     ],
     materialsTitle: 'Učna gradiva',
     materials: [
-      { name: 'Kurikul bootcampa in mentorstva', form: 'Dokument' },
-      { name: 'Načrti delavnic za tematske module', form: 'Učne priprave' },
+      { name: 'Učni načrt bootcampa in mentorstva', form: 'Dokument' },
+      { name: 'Načrti delavnic za tematske module', form: 'Učne lekcije' },
       { name: 'Predstavitve tematskih modulov', form: 'Predstavitve' },
       { name: 'Delovni list za analizo narativov, oblikovanje sporočil in protinarativov', form: 'Delovni list' },
       { name: 'Dobre prakse digitalnega aktivizma', form: 'Videi / študije primerov' },
@@ -367,14 +367,14 @@ const sl: SiteCopy = {
     evaluation: [
       'Med bootcampom izvajalci po vsakem modulu izpeljejo kratko ustno refleksijo o vsebini, metodah, razumevanju, skupinskem delu in uporabnosti. Na koncu vsi izpolnijo vprašalnik o organizaciji, mentorjih, skupinski dinamiki, metodah in vsebini, vključno s samooceno veščin.',
       'Med šestmesečnim mentorstvom evalvacija poteka sproti: samorefleksija, povratne informacije mentorjev in komentarji vrstnikov na Discordu. Mentorji spremljajo vključenost, kakovost vsebin, samostojnost in pripravljenost na nadaljnje udejstvovanje ter po potrebi prilagodijo mentorstvo.',
-      'Na koncu sledita končna evalvacija in proces Youthpass, v katerem udeleženci prepoznajo, poimenujejo in dokumentirajo svoje kompetence. Vse povratne informacije uporabimo za izboljšanje kurikula, učnih priprav in gradiv za prihodnje izvedbe.',
+      'Na koncu sledita končna evalvacija in proces Youthpass, v katerem udeleženci prepoznajo, poimenujejo in dokumentirajo svoje kompetence. Vse povratne informacije uporabimo za izboljšanje učnega načrta, učnih lekcij in gradiv za prihodnje izvedbe.',
     ],
   },
   about: {
     title: 'O nas',
     lead: 'Akademija videoaktivizma je skupni program dveh organizacij iz Slovenije in Hrvaške, ki ga sofinancira Evropska unija.',
     partners: [
-      { name: 'Danes je nov dan', country: 'Slovenija', text: 'Inštitut za druga vprašanja. Razvija digitalna orodja in kampanje za bolj demokratično in pregledno družbo ter ustvarja politične videe in satiro za družbena omrežja.', logo: 'djnd-logo.png', url: 'https://danesjenovdan.si' },
+      { name: 'Danes je nov dan', country: 'Slovenija', text: 'Neprofitna organizacija, ki deluje na presečišču digitalnih tehnologij in demokratičnih procesov, da bi gradila bolj vključujočo in pravično skupno prihodnost.', logo: 'djnd-logo.png', url: 'https://danesjenovdan.si' },
       { name: 'Udruga Delta', country: 'Hrvaška', text: 'Združenje z Reke, ki se ukvarja z mladinskim delom, neformalnim izobraževanjem in razvojem državljanskih kompetenc.', logo: 'delta-logo.png', url: 'https://www.udruga-delta.hr' },
     ],
     peopleTitle: 'Ljudje',
@@ -383,8 +383,8 @@ const sl: SiteCopy = {
       { title: '2 gostujoča vplivneža', text: 'Ustvarjalca javnih strani z velikim številom sledilcev, ki ustvarjata protinarative in satirični družbeni komentar.' },
       { title: '20 udeležencev', text: 'Deset iz Slovenije in deset iz Hrvaške, starih 18–30 let.' },
     ],
-    reuseTitle: 'Uporabi ta kurikul',
-    reuse: 'Program je zasnovan za prilagajanje: manjšim skupinam, eni državi, šolskim razredom ali obstoječim mladinskim skupinam. Učne priprave na tej strani so napisane za izvajalce. Vzemi jih, prilagodi svojemu okolju in jih izpelji.',
+    reuseTitle: 'Uporabi ta učni načrt',
+    reuse: 'Program je zasnovan za prilagajanje: manjšim skupinam, eni državi, šolskim razredom ali obstoječim mladinskim skupinam. Učne lekcije na tej strani so napisane za izvajalce. Vzemi jih, prilagodi svojemu okolju in jih izpelji.',
   },
 };
 
@@ -543,7 +543,7 @@ const hr: SiteCopy = {
     title: 'O nama',
     lead: 'Akademija videoaktivizma zajednički je program dviju organizacija iz Hrvatske i Slovenije, a sufinancira ga Europska unija.',
     partners: [
-      { name: 'Danes je nov dan', country: 'Slovenija', text: 'Institut za druga pitanja. Razvija digitalne alate i kampanje za demokratičnije i transparentnije društvo te stvara političke videe i satiru za društvene mreže.', logo: 'djnd-logo.png', url: 'https://danesjenovdan.si' },
+      { name: 'Danes je nov dan', country: 'Slovenija', text: 'Neprofitna organizacija koja djeluje na sjecištu digitalnih tehnologija i demokratskih procesa kako bi gradila uključiviju i pravedniju zajedničku budućnost.', logo: 'djnd-logo.png', url: 'https://danesjenovdan.si' },
       { name: 'Udruga Delta', country: 'Hrvatska', text: 'Udruga iz Rijeke koja se bavi radom s mladima, neformalnim obrazovanjem i razvojem građanskih kompetencija.', logo: 'delta-logo.png', url: 'https://www.udruga-delta.hr' },
     ],
     peopleTitle: 'Ljudi',
